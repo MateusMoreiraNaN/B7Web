@@ -11,6 +11,9 @@ console.log(idades[0]);
 
 let lista = ['blabla', idades]
 
-let lista2 = ['blabla', ['xx', 'yy']]
+let lista2 = [
+    'blabla', 
+    ['xx', 'yy']
+]
 
 console.log(lista2[1][1]);
