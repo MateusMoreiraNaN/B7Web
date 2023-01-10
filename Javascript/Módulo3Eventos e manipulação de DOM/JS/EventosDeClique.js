@@ -1,3 +1,4 @@
+
 function clicou(){
     let n1 = 5
     let n2 = 5
@@ -14,5 +15,7 @@ console.log(botao);
 botao.addEventListener("click", () => {
     clicou()
 });
+
+
 
 
