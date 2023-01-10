@@ -1,7 +1,7 @@
 let fruits = ['Maça', 'Uva', 'Banana']
 
-for(let x in fruits){
-    console.log(fruits[x]);
+for(let fruit in fruits){
+    console.log(fruits[fruit]);
 }
 
 let sem = 0
