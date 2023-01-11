@@ -2,11 +2,19 @@ function clicou(){
     const teste = document.querySelector('#teste')
     const ul = teste.querySelector('ul')
 
-    //ul.innerHTML += "<li>Item alterado</li>"
+    //ul.children[0].append("(alterado)")
 
-    ul.children[0].innerHTML = "<li>Item alterado</li>"
+    //ul.innerHTML += "<li>Item adicionado</li>"
 
-    ul.children[1].outerHTML = "<strong>Alterado</strong>"
+    
+    let newLi = document.createElement("li")
+
+    newLi.innerText = "Item adicionado"
+
+    ul.appendChild(newLi)
+    
+
+    
 }
 
 let botao = document.querySelector(".botao")

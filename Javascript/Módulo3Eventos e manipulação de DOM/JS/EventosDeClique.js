@@ -6,6 +6,8 @@ function clicou(){
     console.log(n1 + n2);
 
     console.log('Clicou');
+
+    
 }
 
 let botao = document.querySelector(".botao")
