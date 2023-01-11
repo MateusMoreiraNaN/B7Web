@@ -1,0 +1,22 @@
+.container{
+    height: 800px;
+    background-color: #ff3300;
+    margin-top: 50px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: end;
+    align-content: end;
+    
+}
+
+.item{
+    background-color:  #00cc66;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+    /*text-align: center;*/
+   
+}
+

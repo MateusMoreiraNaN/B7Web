@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0px;
+    font-size: 45px;
+    /*
+    font-family: 'Chewy', cursive;
+    */
+    /*
+    font-family: 'Charmonman', cursive;
+    */
+    font-family: 'Ceviche One', cursive;
+    
+}
+
+h1:hover{
+    color: #3366ff;
+}

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 50px;
+
+    /*
+    font-family: 'Chewy', cursive;
+    */
+    /*
+    font-family: 'Charmonman', cursive;
+    font-family: 'Ceviche One', cursive;
+    */
+    /*
+    font-family: 'Fredericka the Great', cursive;
+    */
+    font-family: 'Lemon', cursive;
+    background-color: #000;
+
+    
+}
+
+form{
+    margin-top: 230px;
+    background-color: #000;
+    padding: 15px;
+}
+
+label{
+    font-size: 40px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    
+    color: #0000ff;
+}
+
+.termos{
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    color: #FFF;
+}
+
+input{
+    font-size: 40px;
+    outline:0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+input[type=text], select{
+    margin-top: 9px;
+    padding: 10px;
+    width: 600px;
+    border-radius: 300px;
+    border: 1px solid #CCC;
+}
+input[type=password]{
+    padding: 10px;
+    width: 600px;
+    border-radius: 300px;
+    border: 1px solid #CCC;
+}
+
+.botao{
+    font-size: 15px;
+    width: 400px;
+    border-radius: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    outline: 0;
+    background-color: #CCC;
+}
+
+.botao:hover{
+    background-color: #8080ff;
+}

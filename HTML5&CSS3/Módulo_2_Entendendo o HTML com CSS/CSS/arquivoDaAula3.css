@@ -1,0 +1,29 @@
+h1{
+    color: blue;
+    font-size: 45px;
+    margin: 25px;
+}
+h2{
+    color: blue;
+    margin: 25px;
+}
+p{
+    color: red;
+    font-size: 25px;
+    margin: 25px;
+}
+ul{
+    color: red;
+    font-size: 29px;
+    margin: 25px;
+}
+a{
+    color: blue;
+    font-size: 25px;
+    margin: 25px;
+    margin-top: 19px;
+}
+img{
+    width: 600px;
+    margin: 25px;
+}

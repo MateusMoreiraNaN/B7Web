@@ -1,0 +1,16 @@
+body{
+    background-color: #ff6600;
+  
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media only print {
+    h1{
+        font-size: 20px;
+        font-weight: normal;
+    }
+}

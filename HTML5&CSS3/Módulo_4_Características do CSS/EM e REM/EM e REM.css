@@ -1,0 +1,55 @@
+/* HTML valor 16px */
+
+
+/*EM*/
+/*
+body{
+    font-size: 16px;
+
+
+}
+
+.texto {
+    font-size: 1em; (16: 1em X 16px) 
+}
+
+.texto h1{
+    font-size: 2em; (35px) 
+}
+
+.texto p{
+    (
+    margin padding e mborder
+    
+    recebe o font-size local
+    )
+    border: 1em solid #000;
+    font-size: 2em; 32px 
+}
+
+*/
+
+/* REM */
+
+html{
+    font-size: 16px;
+
+
+}
+
+.texto {
+    font-size: 2rem; /*16: 1em X 16px */ /*  */
+}
+
+.texto h1{
+    font-size: 2em;/* 35px */
+}
+
+.texto p{
+    /*margin padding e mborder
+    
+    recebe o font-size local
+    */
+    border: 1em solid #000;
+    font-size: 2em;/* 32px */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Validações Nativas</title>
+        <link rel="stylesheet" href="./CSS/Validações_Nativas.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+        </style>
+        
+    </head>
+
+    <body>
+        <form action="Formatando formulários no CSS_1.html" method="POST">
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="">
+                    Primeiro Nome:<br>
+                    <input type="text"  name="name" required minlength="3" maxlength="14">
+                </label>
+                <label for="">
+                    Sobrenome:<br>
+                    <input type="text"  name="name2" required minlength="3" maxlength="10">
+                </label>
+                <label for="">
+                    Email:<br>
+                    <input type="email"  name="e" required pattern="(@.Ab78>+)" title="Padrao email">
+                </label>
+                <label for="">
+                    Idade:<br>
+                    <input type="number" name="i" required step="1" min="0" max="120s">
+                </label>
+
+            </fieldset>
+
+
+            
+
+
+            
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label for="">
+                    Nome da Empresa:<br>
+                    <input type="text"  name="name3">
+                </label>
+                <label for="">
+                    Cargo na empresa:<br>
+                    <input type="text"  name="cargo">
+                </label>
+                <br>
+
+            </fieldset>
+
+            <input type="submit" value="cadastrar">
+
+
+
+
+
+        </form>
+        
+    </body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,user-scalable=0">
+        <title>MediCenter</title>
+        <link rel="stylesheet" href="./assets/CSS/template.css">
+
+        <script type="text/javascript">
+            window.onload = function(){
+                document.querySelector(".menuMobile").addEventListener("click", function(){
+                    if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                        document.querySelector(".menu nav ul").style.display = 'none'
+                    } else{
+                        document.querySelector(".menu nav ul").style.display = 'flex'
+                    }
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--Cabeçalho-->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="assets/images2/logo.png" alt=""></a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                        <ul>
+                            <li class="active"><a href="">HOME</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">PAGES</a></li>
+                            <li><a href="">DEPARTMENTS</a></li>
+                            <li><a href="">TIMETABLE</a></li>
+                            <li><a href="">GALLERY</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--Cabeçalho-->
+
+        <!--Banner-->
+        <section id="banner">
+            <div class="container column">
+                <div class="banner-headline">
+                    <h1>Top notch experience</h1>
+                    <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+
+                </div>
+                <div class="banner-options">
+                    <div class="banner1">
+                        <div class="banner-title">Emergency Case</div>
+                        <div class="banner-desc">Algum Texto qualquer</div>
+                        <a href="#">Read more</a>
+                    </div>
+
+                    <div class="banner2">
+                        <div class="banner-title">Doctors Timetable</div>
+                        <div class="banner-desc">Algum Texto qualquer</div>
+                        <a href="#">Read more</a>
+                    </div>
+                    
+                    <div class="banner3">
+                        <div class="banner_title">Opening hours</div>
+                        <div class="banner_week">Monday-Friday 
+                          <div class="hours">8:00 - 17:00</div>
+                        </div>
+                        <div class="banner_saturday">Saturday
+                          <div class="hours">9:30 - 17:30</div> 
+                        </div>
+                        <div class="banner_sunday">Sunday 
+                          <div class="hours">9:30 - !5:00</div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Banner-->
+
+        <!--Conteudo-->
+        <section id="geral">
+            <div class="container">
+                <section>
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Latest News
+                            </div>
+                            <div class="widget_title_Bar"></div>
+                        </div>
+                        <div class="widget_body flex">
+
+                            <article>
+                                <a href="#">
+                                    <div class="news_data">
+                                    
+                                            <div class="news_posted_at">05 JUN 21</div>
+                                            <div class="news_comments">2</div>
+                                    
+                                    </div>
+
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images2/dr.jpg" alt="">
+                                    </div>
+
+                                    <div class="news_title">
+                                        Lorem Ipsum dolor sit amat velum
+                                    </div>
+
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article>
+                                <a href="#">
+                                    <div class="news_data">
+                                    
+                                            <div class="news_posted_at">12 JUN 21</div>
+                                            <div class="news_comments">4</div>
+                                    
+                                    </div>
+
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images2/dr.jpg" alt="">
+                                    </div>
+
+                                    <div class="news_title">
+                                        Lorem Ipsum dolor sit amat velum
+                                    </div>
+
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article>
+                                <a href="#">
+                                    <div class="news_data">
+                                    
+                                            <div class="news_posted_at">27 JUN 21</div>
+                                            <div class="news_comments">11</div>
+                                    
+                                    </div>
+
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images2/dr.jpg" alt="">
+                                    </div>
+
+                                    <div class="news_title">
+                                        Lorem Ipsum dolor sit amat velum
+                                    </div>
+
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article>
+                                <a href="#">
+                                    <div class="news_data">
+                                    
+                                            <div class="news_posted_at">24 DEC 21</div>
+                                            <div class="news_comments">7</div>
+                                    
+                                    </div>
+
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images2/dr.jpg" alt="">
+                                    </div>
+
+                                    <div class="news_title">
+                                        Lorem Ipsum dolor sit amat velum
+                                    </div>
+
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                                    </div>
+                                </a>
+                            </article>
+
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Deparments
+                            </div>
+                            <div class="widget_title_Bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="areiDosQuadrados">
+                                <div class="qua1"></div>
+                                <div class="qua1"></div>
+                            </div>
+                            <div class="areiDosQuadrados2">
+                                <div class="qua2"></div>
+                                <div class="qua2"></div>
+                            </div>
+                            <div class="areiDosQuadrados3">
+                                <div class="qua3"></div>
+                                <div class="qua3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Make An Appointment
+                            </div>
+                            <div class="widget_title_Bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="Appointment">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="Make">
+                                <div class="phone">
+                                 by phone: <strong> 1-800-643-487</strong> 
+                                </div>
+                                <div class="email">
+                                  by e-mail <a href="">mateusg07@gmail.com</a>
+                                </div>
+                                <div class="link">
+                                  or <a href="">file in the from </a> or cur contanet page
+                                </div>
+                                
+                              </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!--Conteudo-->
+
+        <!--rodapé-->
+        <footer>
+            <div class="container flexColumn">
+                <div class="footer-menu">
+                    <div class="fm-1">
+                        <div class="t1">Health Insurance</div>
+                        <div class="t2">Here in medicenter e have individual</div>
+                    </div>
+                    <div class="fm-2">
+                        <div class="t1">Medical Records</div>
+                        <div class="t2">Here in medicenter e have individual</div>
+                    </div>
+                    <div class="fm-3">
+                        <div class="t1">Online bill</div>
+                        <div class="t2">Here in medicenter e have individual</div>
+                    </div>
+                    
+                </div>
+                <div class="footer-area">
+                    <div class="footer-areaitem">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Medicenter Clinic
+                            </div>
+                            <div class="widget_title_Bar"></div>
+
+                            <div class="Medicenter">
+                                <div class="mauris">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div>
+                                    <div class="Medicenter2_Clinic">Medicenter Clinic</div>
+                                    <div class="Street">
+                                        33 Street 
+                                        <div>+123 655 655</div>
+                                    </div>
+                                    <div class="Street">
+                                        Keilor East
+                                        <div>+123 755 755</div>
+                                    </div>
+                                    <div class="Street">
+                                        VIC 3033
+                                        <div class="color_email">medicenter@mail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-areaitem">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Latest Posts
+                            </div>
+                            <div class="widget_title_Bar"></div>
+
+                            <div class="top">
+                                <div>
+                                    → It is a long established fact that a reader will be distracted by the 
+                                    <div class="ago">6 years ago</div>
+                                </div>
+                                <div>
+                                    → Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    <div class="ago">6 years ago</div>
+                                </div>
+                                <div>
+                                    → It is a long established fact that a reader will be distracted by the 
+                                    <div class="ago">6 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-areaitem">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Latest  Tweets
+                            </div>
+                            <div class="widget_title_Bar"></div>
+
+                            <div class="Tweets">
+                                <div>
+                                    → Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                                    <div class="ago2">4 years ago</div>
+                                </div>
+                                <div>
+                                    → Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin 
+                                    <div class="ago2">4 years ago</div>
+                                </div>
+                                <div>
+                                    → Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+                                    <div class="ago2">4 years ago</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copy">
+                    Coyright - Todos os direitos  reservados
+                </div>
+
+            </div>
+        </footer>
+        <!--rodapé-->
+
+
+        
+    </body>
+
+</html>

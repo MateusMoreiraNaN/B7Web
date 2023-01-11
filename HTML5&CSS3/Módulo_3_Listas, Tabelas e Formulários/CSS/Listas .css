@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 50px;
+    font-size: 20;
+
+}
+
+h1{
+    font-size: 80px;
+    /*
+    font-family: 'Chewy', cursive;
+    font-family: 'Bebas Neue', cursive;
+    */
+    font-family: 'Akronim', cursive;
+
+}

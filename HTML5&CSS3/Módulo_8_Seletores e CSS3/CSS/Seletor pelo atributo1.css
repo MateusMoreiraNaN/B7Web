@@ -1,0 +1,29 @@
+input, a {
+    display: block;
+    margin: 15px;
+}
+
+input[required] {
+    background-color: #00ffff;
+}
+
+input[type=text]{
+    background-color: brown;
+}
+
+input[type=password]{
+    background-color: #5500ff;
+}
+
+input[name="usuario"]{
+    background-color: #33cc33;
+}
+
+[type]{
+    padding: 25px;
+}
+
+a[href]{
+    font-size: 35px;
+    color: #000;
+}

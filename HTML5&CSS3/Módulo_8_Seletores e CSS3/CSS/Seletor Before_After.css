@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+
+span{
+    font-size: 55px;
+    color: #0099ff;
+}
+
+div{
+    background-color: #33cc33;
+    padding: 20px;
+}
+
+div::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #0099ff;
+    /*font-size: 55px;*/
+}
+
+/*
+span::after{
+    content: "←";
+    color: #0099ff;
+    font-size: 55px;
+}
+*/

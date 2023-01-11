@@ -1,0 +1,53 @@
+input, a {
+    display: block;
+    margin: 15px;
+    text-decoration: none;
+}
+
+a[href^="https"]{
+    color: #006666;
+}
+
+input[required] {
+    background-color: #00ffff;
+}
+
+input[type=text]{
+    background-color: #000;
+}
+
+input[type=password]{
+    background-color: #5500ff;
+}
+
+input[name="usuario"]{
+    background-color: #33cc33;
+}
+
+[type]{
+    padding: 6px;
+    border-radius: 6px;
+}
+
+a[href]{
+    font-size: 35px;
+}
+
+a[href*="voxel"]{
+    color: #0099ff;
+}
+
+a[href*="tecnologia"]{
+    color: #ff3300;
+}
+
+a[href*="dislexicos"]{
+    color: #000;
+}
+
+a[href*="site"]{
+    color: #6666ff;
+}
+
+
+

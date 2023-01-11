@@ -1,0 +1,62 @@
+html, body {
+    background: #1ba11a url('http://www.savewalterwhite.com/img/tile.png') top left repeat;
+    font-family: Comic Sans,Comic Sans MS,cursive;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul li{
+    display: inline;
+}
+
+img{
+    border: none;
+    padding: 15px;
+
+}
+
+.img1, .img2, .img3{
+    width: 220px;
+    height: 343px;
+    margin-top: 8px;
+}
+
+
+
+#walter-container{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 965px;
+}
+
+#walter-container h1{
+    color: #FFF;
+    font-family: times,helvetic,sans-serif;
+    font-size: 112px;
+    margin: 0;
+    padding-top: 12px;
+
+}
+
+.yellow{
+    color: #fff54f;
+}
+
+#walter-container h3{
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+#walter-container p{
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+}

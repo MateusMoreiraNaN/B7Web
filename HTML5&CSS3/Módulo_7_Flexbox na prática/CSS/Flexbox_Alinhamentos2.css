@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3333cc;
+}
+
+
+
+.container div{
+    width: 100px;
+    height: 100px;
+    background-color: #ff3300;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.topo{
+    align-self: flex-start;
+}
+
+.container2{
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #00cc66;
+    margin-top: 20px;
+}
+
+.container2 div{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}

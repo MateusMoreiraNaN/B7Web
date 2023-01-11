@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+nav{
+    height: 50px;
+    background-color: #99ff99;
+    padding: 15px;
+    margin: 15px;
+}
+
+a{
+    font-size: 20px;
+}
+
+footer{
+    height: 100px;
+    background-color: #CCC;
+}

@@ -1,0 +1,19 @@
+/*
+.js{
+    width: 32px;
+    height: 32px;
+}
+*/
+
+.link{
+    color: darkgreen;
+    font-size: 30px;
+}
+
+.link:hover{
+    color: darkred;
+}
+
+.link:visited{
+    color: darksalmon;
+}

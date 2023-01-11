@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #0099ff;
+    border-radius: 20px;
+    width: 350px;
+    height: 60px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-shadow: 10px 10px 10px #000;
+ 
+
+}
+
+a:hover{
+    background-color: #0066ff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.botao{
+    
+}
+

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    color: pink;
+
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    width: calc(100% - 20px);
+    height: 200px;
+    border-radius:30px;
+    background-color: #CCC;
+
+    color: #FF0000;
+    font-size: 30px;
+    border: 2px solid darkgreen;
+    padding: 9px;
+}
+
+
+.container strong{
+    border: 2px solid #000;
+}
+
+

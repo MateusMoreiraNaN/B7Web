@@ -1,0 +1,61 @@
+body{
+    background-color: #ff6600;
+    font-size: 30px;
+}
+
+@media (min-width: 1000px ){
+    body{
+        background-color: #66ff66;
+
+    }
+    h1{
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    body{
+        background-color: #751aff;
+      
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media(min-width: 411px) and (max-width: 700px){
+    body{
+        background-color: #000;
+        color: #662900;
+    
+        font-family: 'Tangerine', cursive;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 409px) {
+    body{
+        background-color: #0099ff;
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 10px
+        
+    }
+   
+}
+
+@media(max-width: 300px){
+    body{
+        background-color: #339933;
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 14px
+        
+    }
+}

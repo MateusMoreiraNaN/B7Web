@@ -1,0 +1,85 @@
+/*
+#titulo{
+    color: green;
+}
+
+.texto{
+    color: orangered;
+}
+
+img{
+
+}
+*/
+
+/*
+#titulo{
+    color: blue;
+    font-size: 25px;
+}
+
+.texto{
+    color: blue;
+    font-size: 25px;
+}
+
+.lesoes{
+    color: #06AA48;
+    font-size: 20px;
+    font-family: 'opensans, helvetica, arial, sans-serif';
+}
+*/
+
+#titulo, 
+.texto{
+    color: brown;
+    font-size: 29px;
+}
+
+p{
+    color: darkturquoise;
+    font-size: 25px;
+}
+
+h1{
+    color: dimgrey;
+    font-size: 38px;
+}
+
+img{
+    width: 600px;
+    margin: 25px;
+}
+
+.texto{
+    font-weight: bold;
+}
+
+ul li{
+    color:slateblue;
+    font-size: 30px;
+}
+
+.PaulGeorge{
+    color: darkolivegreen;
+    font-size: 29px;
+}
+
+.lesoes{
+    color: #06AA48;
+    font-size: 30px;
+    font-family: 'opensans, helvetica, arial, sans-serif';
+}
+
+.time{
+    color: teal;
+    font-size: 38px;
+}
+
+.ReggieJackson{
+    color:darkorange;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+

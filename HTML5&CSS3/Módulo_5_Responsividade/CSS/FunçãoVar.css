@@ -1,0 +1,22 @@
+:root{
+    --bg-color: #ff6600;
+    --bg-se: #00ccff;
+    --font-color: #00ccff;
+    --h1: #000;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-size: 25px;
+}
+
+h1{
+    color: var(--h1);
+}
+
+.container{
+    --verde: #009900;
+    background-color: var(--bg-se);
+    color: var(--verde);
+    font-size: 35px;
+}

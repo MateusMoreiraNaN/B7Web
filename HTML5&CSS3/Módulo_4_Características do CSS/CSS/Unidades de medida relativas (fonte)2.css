@@ -1,0 +1,25 @@
+body{
+    font-family: Courier New;
+}
+
+
+.box{
+    /*
+    width: 50%;
+    height: 400px;
+    */
+    width: 300px;
+    background-color: #999;
+}
+
+.box-interno{
+    /*
+    width: 50%;
+    height: 50%;
+    */
+    background-color: #333;
+    color: #FFF;
+    width: 7ch;
+
+    
+}

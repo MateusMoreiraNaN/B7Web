@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.exemplo{
+    background-color: #00FF00;
+    width: 400px;
+    height: 400px;
+    
+    padding: 10px;
+    margin: 20px;
+    /*
+    width: 100%;
+    */
+    /*
+    width: auto;
+    */
+    /*
+    height: 500px;
+    width: 500px;
+    */
+}
+
+img{
+    /*
+    width: inherit;
+    max-width: 450px;
+    */
+
+    /*
+    min-width: 500px;
+    width: 100px;
+    */
+} 

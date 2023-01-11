@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+.exemplo{
+    width: 180px;
+    height: 150px;
+    background-color: #006666;
+    margin: auto;
+    margin-top: 100px;
+    transition: all 1s ease;
+
+}
+
+.exemplo:hover{
+    width: 400px;
+    background-color: #00cc99;
+}
+
+a{
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Black Ops One', cursive;
+    text-decoration: none;
+    color: #000;
+    transition: all 1s linear;
+  
+}
+
+a:hover{
+    font-size: 50px;
+    color: #666699;
+}

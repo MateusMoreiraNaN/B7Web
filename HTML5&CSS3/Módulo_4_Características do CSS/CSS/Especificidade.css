@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    color: #FF0000;
+}
+
+body .container{
+    color: #00FF00;
+}
+
+div{
+    color: #1C7097;
+}

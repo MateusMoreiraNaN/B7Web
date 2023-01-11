@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+
+.exemplo{
+    width: 200px;
+    height: 280px;
+    border: 1px solid #000;
+    word-wrap: break-word;
+  
+    
+
+}

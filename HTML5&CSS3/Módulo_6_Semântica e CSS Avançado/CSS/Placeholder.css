@@ -1,0 +1,28 @@
+/*
+.campo{
+    background-color: lightgray;
+    width:200px;
+    height:200px;
+    margin-left: 20px;
+}
+*/
+
+body{
+    margin: 50px;
+    background-color: #EEE;
+}
+
+form{
+    margin:auto;
+    width:250px;
+    height:190px;
+    background-color:#ccc;
+    text-align:left;
+    padding:20px;
+    font-size: 25px;
+}
+
+input{
+    width: 240px;
+    height: 35px;
+}

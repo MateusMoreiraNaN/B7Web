@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 50px;
+    font-size: 20;
+    background-color: #000;
+}
+
+h1{
+    font-size: 80px;
+    /*
+    font-family: 'Chewy', cursive;
+    font-family: 'Bebas Neue', cursive;
+    */
+    font-family: 'Caveat', cursive;
+    color: #1C9729;
+    text-align: center;
+}
+
+h2{
+    font-size: 80px;
+    /*
+    font-family: 'Chewy', cursive;
+    */
+    font-family: 'Lobster Two', cursive;
+    color: #971C1C;
+    text-align: left;
+}
+
+.right{
+    font-size: 80px;
+    /*
+    font-family: 'Chewy', cursive;
+    */
+    font-family: 'Rock Salt', cursive;
+    color: #6600ff;
+    text-align: right;
+}
+
+.justify{
+    font-size: 80px;
+    /*
+    font-family: 'Chewy', cursive;
+    */
+    font-family: 'Rock Salt', cursive;
+    color: #804000;
+    text-align: justify;
+    
+}
+
+.Glyphs{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.Cinzel{
+    font-family: 'Eater', cursive;
+    color: #663300;
+}
+
+.oi{
+    font-family: 'Nosifer', cursive;
+    color: #006600;
+}
+
+p{
+    color: #0000FF;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    text-align:justify;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #0000FF;
+    font-family: 'Akronim', cursive;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #1C9729;
+}
+

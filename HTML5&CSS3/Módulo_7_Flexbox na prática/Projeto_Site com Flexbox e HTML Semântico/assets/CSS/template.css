@@ -1,0 +1,500 @@
+*{
+    font-family: Arial;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase; /*Deixar maiusculo*/
+    color: #727272;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #FFF;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image:url('../images/capa.jpg');
+    background-position:center;
+    background-size:cover;
+    /*
+    height:670px;
+    */
+
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner-headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.banner-headline h1{
+    color: #FFF;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    
+}
+
+.banner-headline h2{
+    color: #FFF;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner-options{
+    height: 210px;
+    display: flex;
+
+    
+}
+
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+
+.banner1{
+    background-color: #39aae1;
+}
+
+.banner2{
+    background-color: #0079c7;
+}
+
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner-title{
+    font-size: 23px;
+}
+
+.banner-desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-options a{
+    display: inline-block;
+    border: 1px solid #FFF;
+    padding: 5px;
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.banner_week,
+.banner_saturday,
+.banner_sunday {
+    display:flex;
+    justify-content:space-between;
+    margin-top:14px;
+    margin-bottom:20px;
+    border-bottom:1px solid #DDD;
+    padding:6px;
+    font-size:12px;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+
+#geral section{
+    flex: 2;
+}
+
+#geral aside{
+    flex: 1;
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text{
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget_title_Bar{
+    width: 50px;
+    height: 3px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+.areiDosQuadrados, .areiDosQuadrados2,
+.areiDosQuadrados3{
+    margin: 25px;
+    display: flex;
+}
+
+.qua1, .qua2, .qua3{
+    background-color: #36a9e1;
+    margin-left: 20px;
+    width: 115px;
+    height: 115px;
+}
+
+.qua1:hover{
+    background-color: #2b4c99;
+    cursor: pointer;
+}
+.qua2:hover{
+    background-color: #2b4c99;
+    cursor: pointer;
+}
+.qua3:hover{
+    background-color: #2b4c99;
+    cursor: pointer;
+}
+
+.Appointment{
+    border-bottom: 1px solid #7F8C8D;
+    margin-bottom: 10px;
+}
+
+.make{
+    display: block;
+    
+    padding: 10px;
+}
+
+.phone, .email, .link{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7F8C8D;
+
+}
+
+.email a, .link a {
+    text-decoration: none;
+    color: #2b4c99;
+}
+
+.email a:hover{
+    color: #000;
+}
+
+.link a:hover{
+    color: #000;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article .news_data{
+    display: flex;
+
+}
+
+article .news_posted_at{
+    background-color: #2b4c99;
+    color: #FFF;
+    font-size: 21px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news_comments{
+    background-color: #39aae1;
+    color: #FFF;
+    font-size: 21px;
+    padding: 10px;
+
+}
+
+article .news_thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+article .news_thumbnail{
+    margin-top: 30px;
+}
+
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: #000;
+}
+
+article .news_resume{
+    font-size: 14px;
+    line-height: 20px;
+    color: #5c5c5c;
+    margin-bottom: 30px;
+}
+
+article a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu{
+    display: flex;
+    flex: 1;
+
+}
+
+.fm-1, .fm-2, .fm-3{
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+
+.fm-1{
+    background-color: #39aae1;
+}
+
+.fm-2{
+    background-color: #0079c7;
+}
+
+.fm-3{
+    background-color: #2b4c99;
+}
+
+.footer-area{
+    display: flex;
+    color: #FFF;
+}
+
+.footer-areaitem{
+    flex: 1;
+    color: #FFF;
+    margin: 30px;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+footer .widget_title_text{
+    color: #FFF;
+}
+
+.footer-copy{
+    border-bottom: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.t1{
+    margin: 15px;
+    font-size: 30px;
+}
+
+.t2{
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.Medicenter{
+    color: #5c5c5c;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.Medicenter2_Clinic{
+    margin-top: 30px;
+}
+
+.Street{
+    display: flex;
+    justify-content: space-between;
+}
+
+.color_email{
+    color: #FFF;
+    cursor: pointer;
+}
+
+.top{
+    margin-top: 25px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.ago, .ago2{
+    margin-bottom: 20px;
+    color: #0079c7;
+    cursor: pointer;
+}
+
+.Tweets{
+    margin-top: 25px;
+    color: #5c5c5c;
+    font-size: 15px;
+}
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+   
+}
+
+.mm_line{
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width: 600px){
+    .banner-headline{
+        padding: 20px;
+    }
+    .banner-headline h1{
+        font-size: 55px;
+    }
+    .banner-headline h2{
+        font-size: 17px;
+    }
+
+    .banner-options{
+        height: auto;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+
+    }
+    #geral section{
+        padding: 20px;
+    }
+    #geral aside{
+        padding: 20px;
+    }
+    .footer-menu{
+        flex-direction: column;
+    }
+    .footer-area{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-copy{
+        padding-left: 20px;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+    }
+
+    header{
+        height: auto;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}

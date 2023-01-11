@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #2F3136;
+}
+
+a:hover{
+    background:  #000 100%;
+}
+
+.home{
+    margin: 80px 80px 80px 80px;
+}
+
+.abas{
+    padding: 150px 150px 150px 150px;
+    display: inline-block;
+    
+}
+
+.ti{
+   color: #FFF;
+}
+
+
+
+img{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+   
+}
+
+.final{
+    border-bottom: 2px solid #FFF;
+}

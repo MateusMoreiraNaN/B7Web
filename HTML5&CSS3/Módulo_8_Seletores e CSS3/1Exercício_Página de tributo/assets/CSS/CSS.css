@@ -1,0 +1,185 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: #000;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 990px;
+    
+}
+
+.container a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase; /*Deixar maiusculo*/
+    color: #FFF;
+    border-radius: 5px;
+    font-family: Arial;
+    font-family: 'Rubik', sans-serif;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image:url('../images/tarantino_capa_widelg.jpg');
+    background-position:center;
+    background-size:cover;
+
+    height:670px;
+
+}
+
+.banner-headline{
+    /*
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    */
+    margin-right: 450px;
+    
+}
+
+.banner-headline h1{
+    color: #FFF;
+    font-size: 60px;
+    text-shadow: 0px 1px 0px #555555;
+    font-family: 'Rubik', sans-serif;
+    color: #000;
+    /*
+    margin: 0;
+    padding: 0;
+    */
+   
+    
+}
+
+.banner-headline h1:hover{
+    color: #FFF;
+}
+
+.banner-headline h2{
+    color: #FFF;
+    font-size: 45px;
+    text-shadow: 0px 1px 0px #555555;
+    font-family: 'Fuggles', cursive;
+    color: #000;
+    /*
+    margin: 0;
+    padding: 0;
+    */
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+h1{
+    text-shadow: 0px 1px 0px #555555;
+}
+
+.biografia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+    background-color: #000;
+   
+
+}
+
+.biografia p{
+    color: #FFF;
+    max-width: 850px;
+
+
+}
+
+.biografia h1{
+    color: #FFF;
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.filmografia{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #FFF;
+}
+
+.fil-p img{
+    padding: 15px;
+    width: 190px;
+    height: 285px;
+    cursor: pointer;
+}
+
+.fil-p img:hover{
+    width: 220px;
+    height: 350px;
+}
+
+.fil-t h1{
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.premios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    background-color: #000;
+}
+
+.pre-t{
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: #FFF;
+}
+
+.pre-li li{
+    color: #FFF;
+    list-style: none;
+    font-family: 'Fuggles', cursive;
+    font-size: 28px;
+}
+
+.pre-li li:hover{
+    font-family: 'Rubik', sans-serif;
+}
+
+footer{
+    display: flex;
+    background-color: #FFF;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+}
+
+footer p{
+    color: #000;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}

@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 50px;
+
+    /*
+    font-family: 'Chewy', cursive;
+    */
+    /*
+    font-family: 'Charmonman', cursive;
+    font-family: 'Ceviche One', cursive;
+    */
+    /*
+    font-family: 'Fredericka the Great', cursive;
+    */
+    font-family: 'Lemon', cursive;
+    background-color:#737373;
+
+    
+}
+
+form{
+    color: #000;
+}
+
+label{
+    font-size: 40px;
+    display: block;
+    margin-top: 10px;
+}
+
+input{
+    margin-top: 9px;
+    padding: 10px;
+    width: 600px;
+    
+}
+
+fieldset{
+    background-color: #ffff99;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+legend{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 8px;
+}

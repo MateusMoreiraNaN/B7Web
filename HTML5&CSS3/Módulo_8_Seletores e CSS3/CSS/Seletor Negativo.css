@@ -1,0 +1,15 @@
+body :not(div){
+    background-color: #DDD;
+   color: #009933;
+   font-size: 60px;
+   padding: 25px;
+}
+
+div{
+    font-size: 45px;
+    color: #ff6600;
+    background-color: #000;
+    padding: 25px;
+}
+
+

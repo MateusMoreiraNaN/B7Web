@@ -1,0 +1,11 @@
+div:nth-child(2){
+    font-size: 55px;
+    color:  #ff8000;
+    background-color: #000;
+}
+
+div:nth-last-child(2){
+    font-size: 55px;
+    color:  #6600ff;
+    background-color: #000;
+}

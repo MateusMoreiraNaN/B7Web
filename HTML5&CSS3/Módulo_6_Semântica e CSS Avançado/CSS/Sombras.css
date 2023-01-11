@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.exemplo{
+    width: 150px;
+    height: 150px;
+    background-color: #666699;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 20px #3333cc;
+    border-radius: 75px;
+}
+
+.texto{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    color: #00cc66;
+    font-size: 45px;
+    text-shadow: 1px 1px 3px;
+}

@@ -1,0 +1,22 @@
+html{
+    font-size: 40px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+body{
+    font-size: 20px;
+}
+
+.box{
+    font-size: 2rem;
+}
+
+.box-interno{
+    width: 10rem;
+    height: 10rem;
+    background-color: #999;
+}
+

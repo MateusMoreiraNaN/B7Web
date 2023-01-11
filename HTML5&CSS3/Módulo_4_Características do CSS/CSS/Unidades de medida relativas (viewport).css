@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+}
+
+.box{
+    
+    background-color: #999;
+    /*
+    height: 100vh;
+    
+    height: 50vw;
+    */
+    /*
+    width: 50vw;
+    height: 50vw;
+    */
+    height: 50vmin;
+    
+}

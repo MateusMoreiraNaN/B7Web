@@ -1,0 +1,22 @@
+body{
+    background-image: url('../image/original.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/*
+div{
+    background-color: rgba(255, 153, 51, 0.5);
+    width: 300px;
+    height: 300px;
+}
+*/
+
+div{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

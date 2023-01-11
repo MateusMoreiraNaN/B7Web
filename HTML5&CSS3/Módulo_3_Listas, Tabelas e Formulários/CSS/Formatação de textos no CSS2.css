@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 50px;
+    font-size: 20;
+    background-color: #000;
+}
+
+h1{
+    font-size: 80px;
+    font-family: 'Chewy', cursive;
+    color: #1C9729;
+    text-align: center;
+    text-shadow: 0px 2px 15px #1C9797;
+}
+
+h2{
+    font-size: 80px;
+    font-family: 'Chewy', cursive;
+    color: #971C1C;
+    text-align: left;
+    text-shadow: 15px 2px 3px #97311C;
+}
+
+.right{
+    font-size: 80px;
+    font-family: 'Chewy', cursive;
+    color: #6600ff;
+    text-align: right;
+}
+
+.justify{
+    font-size: 80px;
+    font-family: 'Chewy', cursive;
+    color: #804000;
+    text-align: justify;
+    
+}
+
+p{
+    color: #0000FF;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    text-align: left;
+    line-height: 70px;
+    text-shadow: 0px 0px 20px #1C8697;
+    
+}
+
+

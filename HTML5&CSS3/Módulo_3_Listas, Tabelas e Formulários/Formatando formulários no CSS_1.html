@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formatando formulários no CSS</title>
+        <link rel="stylesheet" href="./CSS/Formatando formulários no CSS_1.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+        </style>
+        
+    </head>
+
+    <body background="https://cdn.wallpapersafari.com/13/92/Wu6biy.jpg">
+        <form action="paginas/login.html" method="POST">
+
+            <label>
+                Nome completo:<br> 
+                <input type="text">
+            </label><br>
+            <label>
+                Senha:<br>
+                <input type="password">
+            </label>
+            <label>
+                Categoria:
+                <select name="categoria" id="">
+                    <option value="1">Categoria1</option>
+                    <option value="2">Categoria2</option>
+                    <option value="3">Categoria3</option>
+                    <option value="4">Categoria4</option>
+                    <option value="5">Categoria5</option>
+                </select>
+            </label>
+
+            <label class="termos">
+                <input type="checkbox">
+                Eu declaro que li e aceito os <a href="paginas/termos" target="_blank">termos de uso</a>
+            </label>
+            
+            <label>
+                <button class="botao">Fazer Cadastro</button>
+            </label>
+
+
+        </form>
+    </body>
+
+</html>

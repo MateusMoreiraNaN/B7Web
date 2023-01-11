@@ -1,0 +1,104 @@
+/*
+#titulo{
+    background-color:
+
+    RGB
+    R = red = vermelho
+    G = green = verde
+    B = blue = azul
+
+    preto
+    R = 0%
+    G = 0%
+    B = 0%
+
+    branco
+    R = 100%
+    G = 100%
+    B = 100%
+
+    vermelho
+    R= 100%
+    G= 0%
+    B= 0%
+
+
+}
+
+*/
+
+#titulo{
+    background-color: rgb(0, 0, 0);
+    color: rgb(102, 51, 0);
+    font-size: 60px;
+}
+
+h2{
+    font-size: 45px;
+    background-color: rgb(0, 0, 0);
+    color: #ff3300;
+}
+
+.cor{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.texto{
+    color: rgb(200, 45, 4);
+    font-size: 27px;
+}
+
+p{
+    font-size: 55px;
+    color: rgb(200, 45, 4);
+}
+
+a{
+    font-size: 35px;
+    color: #6666ff;
+}
+
+ol li{
+    color: #290066;
+    font-size: 40px;
+}
+
+img{
+    width: 600px;
+}
+
+button{
+    font-size: 40px;
+    color: rgb(200, 45, 4);
+    align-self: start;
+}
+
+
+
+.paul{
+    font-size: 59px;
+    background-color: rgb(100, 50, 200);
+    color: rgb(0, 0, 0);
+}
+
+.Jackson{
+    font-size: 59px;
+    background-color: rgb(0, 0, 0);
+    color: #290066;
+
+    /*
+
+
+
+    */
+}
+
+.final{
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7733ff;
+    max-width: 100%;
+    padding: 15px;
+}
