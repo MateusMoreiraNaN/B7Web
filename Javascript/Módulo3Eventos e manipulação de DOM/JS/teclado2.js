@@ -3,10 +3,10 @@
 function soltou(e){
     if(e){
         //console.log(e.code); // DETALHE
-        //console.log(e.key);
-        console.log('TECLA APERTADA' + e.code);
-        console.log(e.shiftKey);
-        console.log('---');
+        console.log(e.key);
+        //console.log('TECLA APERTADA' + e.code);
+        //console.log(e.shiftKey);
+        //console.log('---');
     }
     
 }
