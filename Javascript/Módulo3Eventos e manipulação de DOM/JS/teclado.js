@@ -1,3 +1,4 @@
+/*
 function apertou(){
     console.log("APERTOU!");
 }
@@ -5,9 +6,14 @@ function apertou(){
 function segurou(){
     console.log("SEGUROU!");
 }
+*/
 
-function soltou(){
-    console.log('SOLTOU');
+function soltou(event){
+    console.log(event.code);
 }
 
-document.addEventListener('keyup', soltou);
+//document.addEventListener('keyup', soltou);
+
+const input = document.querySelector('input')
+
+input.addEventListener('keyup', soltou)
