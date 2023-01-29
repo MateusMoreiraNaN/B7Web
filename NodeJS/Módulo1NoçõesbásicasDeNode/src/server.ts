@@ -14,4 +14,8 @@ server.get('/sobre',(req: Request, res: Response)=>{
     res.send('Sobre mim')
 })
 
+server.get('/duvidas',(req: Request, res: Response)=>{
+    res.send('Tira as duvidas')
+})
+
 server.listen(3000)
