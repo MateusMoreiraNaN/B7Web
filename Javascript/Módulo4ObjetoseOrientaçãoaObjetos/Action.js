@@ -13,10 +13,8 @@ class Person{
     }
 
     setAge(newAge){
-        if(typeof newAge == 'Number'){
+        if(typeof newAge == 'number'){
             this.age = newAge
-        }else{
-            console.log('Valor invalido');
         }
 
     }
