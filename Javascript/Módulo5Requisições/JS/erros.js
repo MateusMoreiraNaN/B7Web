@@ -8,18 +8,20 @@ function clicou(){
             return res.json()
         })
         .then((json)=>{
-            //console.log(data);
-            //console.log(data[0].id);
+            //console.log(data)
+            //console.log(data[0].id)
             alert(`Titulo do primeiro post: ${json[0].title}`)
         })
-
-    alert("OPA, CLICOU")
+        .catch((error)=>{
+            alert("Deu problema")
+            console.log(error)
+        })
+        .finally(()=>{
+            alert("Opa acabou tudo!")
+        })
+   
     
 }
-/*
-function somar(x, y){
-    return 19
-}
-*/
+
 
 document.querySelector('#botao').addEventListener('click', clicou)
