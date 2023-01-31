@@ -1,5 +1,7 @@
 //https://jsonplaceholder.typicode.com/posts
 
+// Promise = Promessa
+
 function clicou(){
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then((res)=>{
@@ -12,5 +14,10 @@ function clicou(){
         })
     
 }
+/*
+function somar(x, y){
+    return 19
+}
+*/
 
 document.querySelector('#botao').addEventListener('click', clicou)
