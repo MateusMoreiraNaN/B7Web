@@ -20,7 +20,7 @@ async function readPosts(){
     if(json.length > 0){
         postArea.innerHTML = ''
         for(let i in json){
-            let postHtml = `<div><h1>${json[i].name}</h1>${json[i].email}</div>`
+            let postHtml = `<div><h1>${json[i].name}</h1>${json[i].email}<h3>${json[i].body}</h3></div>`
             postArea.innerHTML += postHtml
         }
 
