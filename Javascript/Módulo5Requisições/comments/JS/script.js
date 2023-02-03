@@ -22,6 +22,10 @@ async function readPosts(){
         for(let i in json){
             let postHtml = `<div><h1>${json[i].name}</h1>${json[i].email}<h3>${json[i].body}</h3></div>`
             postArea.innerHTML += postHtml
+            let postHtml2 = `<div><h1>${json[i].name}</h1>${json[i].email}<h3>${json[i].body}</h3></div>`
+            postArea.innerHTML += postHtml2
+            let postHtml3 = `<div><h1>${json[i].name}</h1>${json[i].email}<h3>${json[i].body}</h3></div>`
+            postArea.innerHTML += postHtml3
         }
 
 
