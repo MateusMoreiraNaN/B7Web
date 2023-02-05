@@ -3,7 +3,14 @@ import { Router, Request, Response } from 'express'
 const router = Router()
 
 router.get('/',(req: Request, res: Response)=>{
-    res.render('home')
+    //let user: string = 'Mateus'
+    let user = {
+        name: 'Bonieky',
+        age: 90
+    }
+    res.render('home',{
+        user
+    })
 })
 
 
