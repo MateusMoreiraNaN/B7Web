@@ -9,7 +9,14 @@
     <body>
         <h1>Titulo da pagina</h1>
         <hr/>
+        {{#senha}}
+            <h1>Senha falsa</h1>
+        {{/senha}}
         <p>Opa, tudo bem {{ user.name }}, voce já tem {{ user.age }} anos?</p>
+
+        {{#showOld}}
+            Como vai a vida?
+        {{/showOld}}
     
     </body>
 </html>

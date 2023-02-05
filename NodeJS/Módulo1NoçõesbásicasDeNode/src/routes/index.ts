@@ -8,8 +8,17 @@ router.get('/',(req: Request, res: Response)=>{
         name: 'Bonieky',
         age: 90
     }
+
+    let age: Number = 90
+    let showOld: boolean = false
+    if(age > 50){
+        showOld = true
+    }
+
     res.render('home',{
-        user
+        user,
+        senha: true,
+        showOld
     })
 })
 
