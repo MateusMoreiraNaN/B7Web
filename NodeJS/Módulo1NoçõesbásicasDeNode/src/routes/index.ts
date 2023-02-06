@@ -46,6 +46,16 @@ router.get('/voo/:origem-:destino', (req: Request, res: Response)=>{
     res.send(`Procurando voos de ${origem.toUpperCase()} até ${destino.toUpperCase()}`)
 })
 
+router.get('/nome',(req: Request, res: Response)=>{
+
+    let nome: string = req.query.nome as string
+    res.render('pages/nome',{
+        nome
+    })
+})
+
+
+
 export default router
 
 
