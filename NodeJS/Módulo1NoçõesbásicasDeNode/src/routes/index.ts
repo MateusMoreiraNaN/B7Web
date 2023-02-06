@@ -57,6 +57,7 @@ router.get('/nome',(req: Request, res: Response)=>{
 })
 
 router.get('/idade',(req: Request, res: Response)=>{
+    /*
     let mostrarIdade: boolean = false
     let idade: number = 0
 
@@ -68,14 +69,15 @@ router.get('/idade',(req: Request, res: Response)=>{
 
 
     }
+    */
 
     res.render('pages/idade',{
-        idade,
-        mostrarIdade
+        //idade,
+        //mostrarIdade
     })
 })
 
-router.post('/idade-post',(req: Request, res: Response)=>{
+router.post('/idade-resultado',(req: Request, res: Response)=>{
     let mostrarIdade: boolean = false
     let idade: number = 0
 
@@ -88,7 +90,7 @@ router.post('/idade-post',(req: Request, res: Response)=>{
 
     }
     
-    res.render('pages/idadePost',{
+    res.render('pages/idade',{
         idade,
         mostrarIdade
     })
