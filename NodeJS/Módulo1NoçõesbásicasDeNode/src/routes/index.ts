@@ -18,7 +18,18 @@ router.get('/',(req: Request, res: Response)=>{
     res.render('home',{
         user,
         senha: true,
-        showOld
+        showOld,
+        products:[
+            {title: 'Produto X', price: 10},
+            {title: 'Produto Y', price: 15},
+            {title: 'Produto W', price: 20}
+
+        ],
+        listas:[
+            'Dia1',
+            'Toma café',
+            'oi'
+        ]
     })
 })
 

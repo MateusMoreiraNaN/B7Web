@@ -17,6 +17,24 @@
         {{#showOld}}
             Como vai a vida?
         {{/showOld}}
+
+        <hr/>
+
+        <h2>Produtos</h2>
+
+        <ul>
+            {{#products}}
+                <li>{{ title }} - R$ {{ price }}</li>
+            {{/products}}
+        </ul>
+
+        <hr/>
+
+        <ul>
+            {{#listas}}
+                <li>{{.}}</li>
+            {{/listas}}
+        </ul>
     
     </body>
 </html>
