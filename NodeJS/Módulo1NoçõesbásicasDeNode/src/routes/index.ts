@@ -5,7 +5,7 @@ import * as UserControll from '../controllers/userController'
 
 const router = Router()
 
-router.get('/home', HomeControll.home)
+router.get('/', HomeControll.home)
 
 
 router.get('/contato', InfoControll.contato)

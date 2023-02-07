@@ -19,6 +19,14 @@
             {{/products}}
         </ul>
 
+        <h2>Produtos a partir de R$ 12</h2>
+
+        <ul>
+            {{#expensives}}
+                <li>{{ title }} - R$ {{ price }}</li>
+            {{/expensives}}
+        </ul>
+
         <hr/>
 
         <ul>

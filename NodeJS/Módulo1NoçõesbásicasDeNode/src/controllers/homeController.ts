@@ -1,5 +1,7 @@
 import { Request, Response } from "express"
 
+import { Product } from '../models/Product'
+
 export const home = (req: Request, res: Response)=>{
     //let user: string = 'Mateus'
     let user = {
@@ -13,16 +15,16 @@ export const home = (req: Request, res: Response)=>{
         showOld = true
     }
 
+    let list = Product.getAll()
+    let expensiveList = Product.getPrice(12)
+
     res.render('pages/home',{
         user,
         senha: true,
         showOld,
-        products:[
-            {title: 'Produto X', price: 10},
-            {title: 'Produto Y', price: 15},
-            {title: 'Produto W', price: 20}
-
-        ],
+        
+        products: list,
+        expensives: expensiveList,
         listas:[
             'Dia1',
             'Toma café',
