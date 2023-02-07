@@ -13,7 +13,7 @@ export const home = (req: Request, res: Response)=>{
         showOld = true
     }
 
-    res.render('home',{
+    res.render('pages/home',{
         user,
         senha: true,
         showOld,
