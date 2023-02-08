@@ -2,7 +2,8 @@ import express from 'express'
 import dotenv from 'dotenv'
 import mustache from 'mustache-express'
 import path from 'path'
-//start
+import mainRoutes from './routes/RoutesMain'
+//npm run start
 
 dotenv.config()
 
@@ -15,5 +16,10 @@ server.engine('mustache', mustache())
 server.use(express.static(path.join(__dirname, '../public')))
 
 //Rotas
+
+server.use(mainRoutes)
+server.use((req, res)=>{
+    res.send('página não encontrada')
+})
 
 server.listen(process.env.PORT)
