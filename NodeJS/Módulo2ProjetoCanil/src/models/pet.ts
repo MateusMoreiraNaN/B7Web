@@ -129,5 +129,7 @@ const data: Pet[] = [
 ]
 
 export const Pet = {
-
+    getAll: (): Pet[] =>{
+        return data
+    }
 }
