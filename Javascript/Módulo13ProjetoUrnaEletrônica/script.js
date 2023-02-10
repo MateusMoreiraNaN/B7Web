@@ -1,0 +1,6 @@
+let seuVotoPara = document.querySelector('.d-1-1 span')
+let cargo = document.querySelector('.d-1-2 span')
+let descricao = document.querySelector('.4-1-4')
+let aviso = document.querySelector('.4-2')
+let lateral = document.querySelector('.4-1 right')
+let numeros = document.querySelector('.4-1-3')
