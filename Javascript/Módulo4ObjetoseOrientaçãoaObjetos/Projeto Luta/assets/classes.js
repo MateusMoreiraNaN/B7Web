@@ -60,9 +60,23 @@ class BigMonster extends Character{
     }
 }
 
-class Strage {
+class Stage {
 
-    constructor(){
-        
+    constructor(fighter1, fighter2, fighter1E1, fighter2E1){
+        this.fighter1 = fighter1
+        this.fighter2 = fighter2
+        this.fighter1E1 = fighter1E1
+        this.fighter2E1 = fighter2E1
+    }
+
+    start(){
+        this.update()
+    }
+
+    update(){
+        this.fighter1E1.querySelector('.name').innerHTML = this.fighter1.name
+
+        this.fighter2E1.querySelector('.name').innerHTML = this.fighter2.name
     }
 }
+
