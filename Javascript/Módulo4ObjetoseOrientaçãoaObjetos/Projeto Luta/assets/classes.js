@@ -59,3 +59,10 @@ class BigMonster extends Character{
         this.maxLife = this.life
     }
 }
+
+class Strage {
+
+    constructor(){
+        
+    }
+}
