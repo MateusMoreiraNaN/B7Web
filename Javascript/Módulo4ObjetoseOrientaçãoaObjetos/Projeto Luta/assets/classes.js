@@ -63,6 +63,7 @@ class BigMonster extends Character{
 class Stage {
 
     constructor(fighter1, fighter2, fighter1E1, fighter2E1){
+        let  teste = 'sad'
         this.fighter1 = fighter1
         this.fighter2 = fighter2
         this.fighter1E1 = fighter1E1
