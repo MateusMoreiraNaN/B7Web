@@ -51,7 +51,9 @@ class LitterMonster extends Character {
 }
 
 class BigMonster extends Character{
+   
     constructor(){
+        let big = 'oi'
         super('Big Monster')
         this.life = 120
         this.attack = 16
@@ -81,3 +83,4 @@ class Stage {
     }
 }
 
+console.log('rodando');
