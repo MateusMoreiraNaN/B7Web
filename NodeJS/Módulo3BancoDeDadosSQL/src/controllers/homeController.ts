@@ -1,10 +1,36 @@
 import { Request, Response } from 'express';
+import { Op } from 'sequelize';
 
 import { Product } from '../models/Product';
 import { User } from '../models/User'
 
+
 export const home = async (req: Request, res: Response)=>{
-    let users = await User.findAll()
+    let users = await User.findAll({
+        //attributes: ['name', 'age']
+
+        //where: {name: 'Paulo'}
+        //where: {age: 55}
+        where:{
+            /*
+            age:{
+                [Op.or]: [30, 55]
+            }
+            */
+
+            [Op.or]:[
+                {age: 55},
+                {age: 20},
+                {name: 'Mateus'}
+            ]
+        }
+        /*
+        where:{
+            age:[55,90]
+        }
+        */
+        
+    })
 
     //console.log("USUARIOS: ", JSON.stringify(users));
 
