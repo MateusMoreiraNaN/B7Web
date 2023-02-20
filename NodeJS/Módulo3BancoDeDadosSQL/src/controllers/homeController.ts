@@ -7,6 +7,24 @@ import { User } from '../models/User'
 
 
 export const home = async (req: Request, res: Response)=>{
+
+    await User.update({ age: 18 }, {
+        where:{
+            age:{
+                [Op.lt]: 18
+            }
+        }
+    })
+
+    await User.update({ name: 'Seu Mateus' },{
+        where:{
+            id: 1
+        }
+    })
+
+
+
+
     
     let users = await User.findAll()
     
