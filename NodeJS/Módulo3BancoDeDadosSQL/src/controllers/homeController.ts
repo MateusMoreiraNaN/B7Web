@@ -13,6 +13,7 @@ export const home = async (req: Request, res: Response)=>{
         //where: {age: 55}
         where:{
             age:{
+                [Op.gte]: 10
                 /*
                 [Op.gt]: 40, // > 40
                 [Op.gte]: 40, // >= 40
@@ -25,7 +26,7 @@ export const home = async (req: Request, res: Response)=>{
                 [Op.lte]: 70
                 */
 
-                [Op.between]: [40, 80]
+                //[Op.between]: [40, 80]
                 //[Op.notBetween]: [40, 80]
                 //[Op.in]: [30, 55]
                 //[Op.notIn]: [30, 55]
@@ -45,12 +46,20 @@ export const home = async (req: Request, res: Response)=>{
             name:{
                 [Op.like]: '%a%'
             }
-        }
+        },
         /*
         where:{
             age:[55,90]
         }
         */
+        //order:['name']
+
+        order:[
+            ['name', 'ASC'],
+            ['age', 'DESC']
+        ]
+
+
         
     })
 
