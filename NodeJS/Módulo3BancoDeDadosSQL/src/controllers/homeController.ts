@@ -12,17 +12,39 @@ export const home = async (req: Request, res: Response)=>{
         //where: {name: 'Paulo'}
         //where: {age: 55}
         where:{
+            age:{
+                /*
+                [Op.gt]: 40, // > 40
+                [Op.gte]: 40, // >= 40
+                [Op.lt]: 40, // < 40
+                [Op.lte]: 40 // <= 40
+                */
+
+                /*
+                [Op.gte]: 40,
+                [Op.lte]: 70
+                */
+
+                [Op.between]: [40, 80]
+                //[Op.notBetween]: [40, 80]
+                //[Op.in]: [30, 55]
+                //[Op.notIn]: [30, 55]
+            },
             /*
             age:{
                 [Op.or]: [30, 55]
             }
             */
-
+            /*
             [Op.or]:[
                 {age: 55},
                 {age: 20},
                 {name: 'Mateus'}
             ]
+            */
+            name:{
+                [Op.like]: '%a%'
+            }
         }
         /*
         where:{
