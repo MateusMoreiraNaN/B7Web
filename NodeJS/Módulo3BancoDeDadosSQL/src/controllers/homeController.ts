@@ -52,12 +52,15 @@ export const home = async (req: Request, res: Response)=>{
             age:[55,90]
         }
         */
-        //order:['name']
 
         order:[
             ['name', 'ASC'],
             ['age', 'DESC']
-        ]
+        ],
+
+
+        offset: 4,
+        limit: 2
 
 
         
