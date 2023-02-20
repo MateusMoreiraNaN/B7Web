@@ -1,3 +1,4 @@
+/*
 import { Sequelize } from "sequelize";
 import dotenv from 'dotenv'
 
@@ -12,3 +13,4 @@ export const sequelize = new Sequelize(
         port: parseInt(process.env.PG_PORT as string) 
     }
 )
+*/
