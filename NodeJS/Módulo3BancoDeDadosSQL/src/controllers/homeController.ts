@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Op } from 'sequelize';
+import { Op, where } from 'sequelize';
 
 import { Product } from '../models/Product';
 import { User, UserInstance } from '../models/User'
@@ -22,6 +22,20 @@ export const home = async (req: Request, res: Response)=>{
         }
     })
 */
+
+    let results2 = await User.findAll({where: {name: 'oi'}})
+    if(results2.length > 0){
+        let usuario = results2[0]
+
+        await usuario.destroy()
+    }
+
+
+    await User.destroy({
+        where:{
+            age:[100]
+        }
+    })
 
     let results = await User.findAll({where: {id: 7}})
 
