@@ -2,12 +2,12 @@ import { Request, Response } from 'express';
 import { Op } from 'sequelize';
 
 import { Product } from '../models/Product';
-import { User } from '../models/User'
+import { User, UserInstance } from '../models/User'
 
 
 
 export const home = async (req: Request, res: Response)=>{
-
+/*
     await User.update({ age: 18 }, {
         where:{
             age:{
@@ -21,9 +21,18 @@ export const home = async (req: Request, res: Response)=>{
             id: 1
         }
     })
+*/
 
+    let results = await User.findAll({where: {id: 7}})
 
+    if(results.length > 0){
+        let usuario: UserInstance = results[0]
 
+        usuario.age = 70
+        usuario.name = 'Testador alterado'
+        await usuario.save()
+    }
+    
 
     
     let users = await User.findAll()
