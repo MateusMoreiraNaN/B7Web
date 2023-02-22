@@ -123,6 +123,8 @@ export const novoUsuario = async (req: Request, res: Response) => {
     res.redirect('/');
 }
 
+
+
 // create
     /*
     const user = await User.create({

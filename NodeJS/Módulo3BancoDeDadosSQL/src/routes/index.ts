@@ -11,7 +11,7 @@ router.get('/', HomeController.home);
 router.post('/novousuario', HomeController.novoUsuario);
 router.get('/contato', InfoController.contato);
 router.get('/sobre', InfoController.sobre);
-
+router.get('/usuario/:id/excluir', UserController.excluir)
 router.get('/nome', UserController.nome);
 router.get('/idade', UserController.idadeForm);
 router.post('/idade-resultado', UserController.idadeAction);
