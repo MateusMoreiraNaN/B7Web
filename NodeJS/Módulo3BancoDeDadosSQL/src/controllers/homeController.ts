@@ -33,8 +33,27 @@ export const home = async (req: Request, res: Response)=>{
     }
 
     const [ usuario, created ] = await User.findOrCreate({
-        
+        where:{ name: 'Bonieky' },
+        defaults:{
+            age: 90 
+        }
     })
+
+    if(created){
+        console.log("Usuário criado com sucesso!");
+        
+    }else{
+        console.log("Achamos o usuário");
+        
+    }
+
+    console.log("Nome: ", usuario.name);
+    
+
+    console.log("USUARIO", usuario)
+    console.log("CREATED", created);
+    
+
 
 
 
