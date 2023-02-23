@@ -8,6 +8,11 @@ import { User, UserInstance } from '../models/User'
 
 export const home = async (req: Request, res: Response)=>{
 
+    await User.create({
+        name: 'Testador novo',
+        age: 15
+    })
+
     let usuario1 = await User.findOne({
         where:{
             id: 4
