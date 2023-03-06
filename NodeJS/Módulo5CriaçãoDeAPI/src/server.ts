@@ -11,7 +11,7 @@ dotenv.config();
 const server = express();
 
 server.use(cor({
-    origin: '*'
+    
 }))
 
 server.set('view engine', 'mustache');
@@ -25,8 +25,10 @@ server.use(express.urlencoded({extended: true}));
 //server.use(mainRoutes);
 server.use('/api', apiRoutes)
 
+
 server.use((req: Request, res: Response)=>{
     res.status(404).send('Página não encontrada!');
 });
+
 
 server.listen(process.env.PORT);
