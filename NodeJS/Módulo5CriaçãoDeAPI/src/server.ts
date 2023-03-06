@@ -3,11 +3,16 @@ import path from 'path';
 import mustache from 'mustache-express';
 import dotenv from 'dotenv';
 import apiRoutes from './router/api'
+import cor from 'cors'
 
 
 dotenv.config();
 
 const server = express();
+
+server.use(cor({
+    origin: '*'
+}))
 
 server.set('view engine', 'mustache');
 server.set('views', path.join(__dirname, 'views'));
