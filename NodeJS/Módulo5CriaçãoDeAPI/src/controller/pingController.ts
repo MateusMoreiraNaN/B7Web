@@ -1,4 +1,6 @@
 import { Request, Response } from "express";
+import { join } from "path";
+import { Sequelize } from 'sequelize';
 import { Phrase, PhraseInstance } from '../models/Phrase'
 
 export const ping = (req: Request, res: Response) =>{
@@ -78,4 +80,20 @@ export const deletePhrase = async (req: Request, res: Response)=>{
         where:{ id }
     })
     res.json({})
+}
+
+export const randomPhrase = async (req: Request, res: Response)=>{
+    let phrase = await Phrase.findOne({
+        order:[
+            Sequelize.fn('RANDOM') //MYSQL -> RAND
+        ]
+    })
+
+    if(phrase){
+        res.json({phrase})
+    }else{
+        res.json({error: 'error'})
+    }
+
+    
 }
