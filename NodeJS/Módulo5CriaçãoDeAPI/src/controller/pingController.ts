@@ -29,3 +29,24 @@ export const createPhrase = async (req: Request, res: Response)=>{
 
    
 }
+
+export const listPhrase = async (req: Request, res: Response)=>{
+
+    let list = await Phrase.findAll()
+
+    res.json({ list })
+}
+
+export const getPhrase = async (req: Request, res: Response)=>{
+
+   let { id } = req.params
+
+   let phrase = await Phrase.findByPk(id)
+   if(phrase){
+        res.json({ phrase })
+   }else{
+        res.json({error: 'Frase não encontrada'})
+   }
+
+    
+}

@@ -8,5 +8,7 @@ router.get('/random', pingController.random)
 router.get('/nome/:nome', pingController.nome)
 
 router.post('/frases', pingController.createPhrase)
+router.get('/frases', pingController.listPhrase)
+router.get('/frase/:id', pingController.getPhrase)
 
 export default router
