@@ -10,5 +10,6 @@ router.get('/nome/:nome', pingController.nome)
 router.post('/frases', pingController.createPhrase)
 router.get('/frases', pingController.listPhrase)
 router.get('/frase/:id', pingController.getPhrase)
+router.put('/frase/:id', pingController.updatePhrase)
 
 export default router
