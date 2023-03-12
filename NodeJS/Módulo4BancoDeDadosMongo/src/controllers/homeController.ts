@@ -1,8 +1,13 @@
 import { Request, Response } from 'express';
 
 import { Product } from '../models/Product';
+import User from '../models/User'
 
-export const home = (req: Request, res: Response)=>{
+export const home = async(req: Request, res: Response)=>{
+    let usuarios = await User.find({})
+    console.log("USUARIOS", usuarios);
+    
+
     let age: number = 90;
     let showOld: boolean = false;
 
