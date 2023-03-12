@@ -1,17 +1,18 @@
-const mongoose = require('mongoose')
-import dotenv from 'dotenv'
-dotenv.config()
+import { connect, ConnectOptions } from "mongoose";
+import dotenv from 'dotenv';
 
-mongoose.set('strictQuery', true)
-export const mongoConnect = async ()=>{
+dotenv.config();
+
+export const mongoConnect  = async () => {
     try{
-        console.log('Conectando ao MongoDb...')
-        await mongoose.connect(process.env.MONGO_URL as string, {
+        console.log('Conectando ao MongoDB...');
+        await connect(process.env.MONGO_URL! as string, {
             useNewUrlParser: true,
-            useUnifiedTopology: true
-        })
-        console.log('Conectado!')
+            useUnifiedTopology:true
+
+        } as ConnectOptions);
+        console.log('MongoDB conectado com sucesso!');
     }catch(error){
-        console.log('Erro Conexão MongoDb' , error)
+        console.log('Erro conexão MongoDB', error);
     }
 }

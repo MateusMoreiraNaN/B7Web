@@ -1,28 +1,25 @@
-import { Schema, model, Model, connection } from 'mongoose'
-
+import { Schema, model, Model, connection } from "mongoose";
 type UserType = {
+    email: string,
+    age: number,
+    interest: [string],
     name: {
         firstName: string,
         lastName: string
-    },
-    email: string,
-    age: number,
-    interests: [string]
-}
+    }
+};
 
 const schema = new Schema<UserType>({
-    name:{
-        firstName: {type: String, required: true},
-        lastName: String
-    },
     email: {type: String, required: true},
     age: {type: Number, required: true},
-    interests: [String],
-    
-})
+    interest: [String],
+    name: {
+      firstName: {type: String, required: true},
+      lastName: String
+    }
+  });
 
-const modelName: string = 'User'
-
+const modelName: string = 'User';
 export default (connection && connection.models[modelName]) ?
     connection.models[modelName] as Model<UserType>
      :
