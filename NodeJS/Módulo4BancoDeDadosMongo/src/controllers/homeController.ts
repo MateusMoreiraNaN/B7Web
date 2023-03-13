@@ -8,9 +8,31 @@ export const home = async(req: Request, res: Response)=>{
     //let usuarios = await User.find({})
     //console.log("USUARIOS", usuarios);
 
+    /*
     let usuarios = await User.findOne({
-        email: 'suportB7web.com'
+        email: 'pedroluiz50@gmail.com'
     })
+    */
+
+    let usuarios = await User.find({
+        "name.firstName": "Pedro"
+    })
+
+   
+    console.log("USUARIOS", usuarios);
+
+    console.log('--------------------------');
+    
+
+    let usuariosIdade = await User.find({
+        age:{ $lte: 18, $gt: 100 }
+    })
+
+    console.log(usuariosIdade);
+    
+    
+
+    
     
 
     let age: number = 90;
