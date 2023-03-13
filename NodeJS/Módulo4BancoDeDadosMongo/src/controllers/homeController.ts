@@ -24,8 +24,14 @@ export const home = async(req: Request, res: Response)=>{
     console.log('--------------------------');
     
 
+    /*
     let usuariosIdade = await User.find({
         age:{ $gt: 100 }
+    })
+    */
+
+    let usuariosIdade = await User.find({
+        age:{ $gt: 18 }
     })
 
     console.log(usuariosIdade);
