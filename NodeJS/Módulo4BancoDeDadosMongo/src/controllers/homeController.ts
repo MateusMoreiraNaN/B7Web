@@ -25,7 +25,7 @@ export const home = async(req: Request, res: Response)=>{
     
 
     let usuariosIdade = await User.find({
-        age:{ $lte: 18, $gt: 100 }
+        age:{ $gt: 100 }
     })
 
     console.log(usuariosIdade);
