@@ -5,7 +5,10 @@ import User from '../models/User'
 
 export const home = async(req: Request, res: Response)=>{
 
-   
+    //[Op.gt]: 40, // > 40
+    //[Op.gte]: 40, // >= 40
+    //[Op.lt]: 40, // < 40
+    //[Op.lte]: 40 // <= 40
 
     //let usuarios = await User.find({})
     //console.log("USUARIOS", usuarios);
@@ -25,7 +28,7 @@ export const home = async(req: Request, res: Response)=>{
    
     //console.log("USUARIOS", usuarios);
 
-    console.log('--------------------------');
+    //console.log('--------------------------');
     
 
     /*
@@ -35,13 +38,21 @@ export const home = async(req: Request, res: Response)=>{
     */
     
 
+    /*
+    let usuariosIdade2 = await User.find({
+       age:{ $gt: 2 }
+    })
+    */
+
     let usuariosIdade = await User.find({
-        age:{ $gt: 2 }
-    }).sort({ "name.firstName": 1, "name.lastName": 1 })
+        age:{ $gt: 18 }
+    }).skip(2).limit(2)
 
     console.log(usuariosIdade);
 
-    //let usuarios = await User.findAll()
+    //let usuarios = await User.findAll
+
+
     
     
 
