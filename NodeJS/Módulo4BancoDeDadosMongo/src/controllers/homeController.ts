@@ -5,6 +5,31 @@ import User from '../models/User'
 
 export const home = async(req: Request, res: Response)=>{
 
+    
+
+
+    let newUser = await User.create({
+        name: {firstName: 'Monaliza', lastName: 'Moreira'},
+        email: 'mona@paris.org',
+        age: 200,
+        interest: ['arte', 'pizza']
+
+    })
+
+    console.log(newUser);
+
+    let newUser1 = new User()
+
+    newUser1.name = {firstName: 'zarya', lastName: 'ow'},
+    newUser1.email = 'zareyaOw004@gmail.com',
+    newUser1.age = 38,
+    newUser1.interest.push('Viajar', 'Comer', 'Tecnologia');
+
+    let resul = await newUser1.save()
+    console.log(resul);
+    
+    
+
     //[Op.gt]: 40, // > 40
     //[Op.gte]: 40, // >= 40
     //[Op.lt]: 40, // < 40
