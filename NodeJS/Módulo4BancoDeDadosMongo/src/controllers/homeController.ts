@@ -27,6 +27,34 @@ export const home = async(req: Request, res: Response)=>{
 
     let resul = await newUser1.save()
     console.log(resul);
+
+    // alterar grupos de dados
+    await User.updateMany(
+        {age: {$gte:18}},
+        {age: 18}
+    )
+
+    //alterar um dado
+    await User.updateOne(
+        {email: "pedroluiz50@gmail.com"},
+        {age: 45}
+    )
+
+    await User.updateMany(
+        {age: {$gte:18}},
+        {age: 1000}
+    )
+
+    let pedro = await User.findOne({ email: 'pedroluiz50@gmail.com' })
+
+    if(pedro){
+        pedro.name.lastName = "Walter"
+        pedro.age = 40
+
+        await pedro.save()
+    }
+
+    
     
     
 
@@ -95,8 +123,6 @@ export const home = async(req: Request, res: Response)=>{
 export const novoUsuario = async(req: Request, res: Response)=>{
     let { firstName, lastName, email, age, interest } = req.body
     
-    
-
     if(firstName){
         let newUser = new User()
 
