@@ -77,30 +77,46 @@ export const home = async(req: Request, res: Response)=>{
 
     //let usuarios = await User.findAll
 
-
+    let users = await User.find({}).sort({"name.firstName": 1})
     
     
 
     
     
 
-    let age: number = 90;
-    let showOld: boolean = false;
-
-    if(age > 50) {
-        showOld = true;
-    }
-
-    let list = Product.getAll();
-    let expensiveList = Product.getFromPriceAfter(12);
+    
 
     res.render('pages/home', {
-        name: 'Bonieky',
-        lastName: 'Lacerda',
-        showOld,
-        products: list,
-        expensives: expensiveList,
-        frasesDoDia: [],
-        //usuarios
+        
+        users
     });
 };
+
+export const novoUsuario = async(req: Request, res: Response)=>{
+    let { firstName, lastName, email, age, interest } = req.body
+    
+    
+
+    if(firstName){
+        let newUser = new User()
+
+        newUser.name.firstName = firstName
+        
+        if(lastName){
+            newUser.name.lastName = lastName
+        }
+        if(email){
+            newUser.email = email
+        }
+        if(age){
+            newUser.age = parseInt(age)
+        }
+        if(interest){
+            newUser.interest = interest
+        }
+
+        await newUser.save()
+    }
+
+    res.redirect('/')
+}
