@@ -54,6 +54,23 @@ export const home = async(req: Request, res: Response)=>{
         await pedro.save()
     }
 
+    //deletar
+
+    let arya = await User.findOne({ email: "aryamail.com" })
+
+    if(arya){
+        await arya.deleteOne()
+    
+    }
+    //deletar 1 dado
+    await User.findOneAndDelete({email: 'zareyaOw004@gmail.com'})
+
+    await User.deleteMany({
+        
+        age: {$gte:500}
+    })
+    
+
     
     
     
