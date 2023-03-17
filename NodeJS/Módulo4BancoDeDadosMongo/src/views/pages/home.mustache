@@ -18,7 +18,12 @@
 <h1>Usuários</h1>
 <ul>
     {{#users}}
-        <li>{{name.firstName}} - Idade: {{age}} anos  <a href="/addidade/{{_id}}"><button>idade + 1</button></a></li>
+        <li>{{name.firstName}} - Idade: {{age}} anos  
+            <a href="/addidade/{{_id}}"><button>idade + 1</button></a>
+            <a href="/addidade2/{{_id}}"><button>idade - 1</button></a>
+            <a href="/delete/{{_id}}"><button>delete</button></a>
+
+        </li>
     {{/users}}
 </ul>
 
