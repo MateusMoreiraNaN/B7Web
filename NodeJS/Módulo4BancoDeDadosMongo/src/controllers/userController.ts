@@ -32,6 +32,7 @@ export const idadeAction = (req: Request, res: Response) => {
     });
 };
 
+
 export const addIdade = async (req: Request, res: Response) =>
 {
     /*
@@ -48,10 +49,11 @@ export const addIdade = async (req: Request, res: Response) =>
     
     const id = req.params.id
 
-    if (!id) throw new Error(`ERROR :: ${id}`)
     const user = await User.findOne({ _id: id })
-    if (user?.age) user.age++
-    user?.save()
+    if (user?.age){
+        user.age++
+        await user?.save()
+    }
     res.redirect('/')
     
 

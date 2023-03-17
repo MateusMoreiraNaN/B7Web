@@ -18,7 +18,7 @@
 <h1>Usuários</h1>
 <ul>
     {{#users}}
-        <li>{{name.firstName}} - Idade: {{age}} anos  <a href="/usuario/{{_id}}/addidade">+1 ano de vida</a></li>
+        <li>{{name.firstName}} - Idade: {{age}} anos  <a href="/addidade/{{_id}}"><button>idade + 1</button></a></li>
     {{/users}}
 </ul>
 

@@ -11,7 +11,7 @@ router.get('/', HomeController.home);
 router.get('/contato', InfoController.contato);
 router.get('/sobre', InfoController.sobre);
 router.post('/novo-usuario', HomeController.novoUsuario)
-router.get('/usuario/:id/addidade', UserController.addIdade)
+router.get('/addidade/:id', UserController.addIdade)
 router.get('/nome', UserController.nome);
 router.get('/idade', UserController.idadeForm);
 router.post('/idade-resultado', UserController.idadeAction);

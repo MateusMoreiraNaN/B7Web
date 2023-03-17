@@ -29,11 +29,13 @@ export const home = async(req: Request, res: Response)=>{
     let resul = await newUser1.save()
     console.log(resul);
 
+    /*
     // alterar grupos de dados
     await User.updateMany(
         {age: {$gte:18}},
         {age: 18}
     )
+    */
 
     //alterar um dado
     await User.updateOne(
@@ -168,3 +170,4 @@ export const novoUsuario = async(req: Request, res: Response)=>{
 
     res.redirect('/')
 }
+
