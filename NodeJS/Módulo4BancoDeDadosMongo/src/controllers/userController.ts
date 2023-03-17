@@ -45,23 +45,13 @@ export const addIdade = async (req: Request, res: Response) =>
     }
     */
 
-    /*
-    let id: string = req.params.id
+    
+    const id = req.params.id
 
     if (!id) throw new Error(`ERROR :: ${id}`)
     const user = await User.findOne({ _id: id })
     if (user?.age) user.age++
     user?.save()
-    */
-
-    let id: string = req.params.id
-
-    const user = await User.findOne({ _id: id })
-    
-    user.age++
-    
-    await user.save()
-
     res.redirect('/')
     
 

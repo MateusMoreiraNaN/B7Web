@@ -7,7 +7,7 @@ export const home = async(req: Request, res: Response)=>{
 
     
 
-
+    /*
     let newUser = await User.create({
         name: {firstName: 'Monaliza', lastName: 'Moreira'},
         email: 'mona@paris.org',
@@ -15,8 +15,9 @@ export const home = async(req: Request, res: Response)=>{
         interest: ['arte', 'pizza']
 
     })
+    */
 
-    console.log(newUser);
+    //console.log(newUser);
 
     let newUser1 = new User()
 
@@ -40,10 +41,12 @@ export const home = async(req: Request, res: Response)=>{
         {age: 45}
     )
 
+    /*
     await User.updateMany(
         {age: {$gte:18}},
         {age: 1000}
     )
+    */
 
     let pedro = await User.findOne({ email: 'pedroluiz50@gmail.com' })
 
@@ -65,10 +68,12 @@ export const home = async(req: Request, res: Response)=>{
     //deletar 1 dado
     await User.findOneAndDelete({email: 'zareyaOw004@gmail.com'})
 
+    /*
     await User.deleteMany({
         
         age: {$gte:500}
     })
+    */
     
 
     
