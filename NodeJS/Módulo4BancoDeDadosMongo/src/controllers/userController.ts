@@ -35,16 +35,7 @@ export const idadeAction = (req: Request, res: Response) => {
 
 export const addIdade = async (req: Request, res: Response) =>
 {
-    /*
-    let results = await User.findAll({ where: {id}})
-    if(results.length > 0){
-        let usuario = results[0]
-
-        usuario.age++
-
-        await usuario.save()
-    }
-    */
+    
 
     
     const id = req.params.id
@@ -56,6 +47,34 @@ export const addIdade = async (req: Request, res: Response) =>
     }
     res.redirect('/')
     
+
+
+
+}
+
+export const addIdade2 = async (req: Request, res: Response) =>
+{
+    const id = req.params.id
+    const user = await User.findOne({ _id: id })
+    if (user?.age){
+        user.age--
+        await user?.save()
+    }
+    res.redirect('/')
+
+
+}
+
+export const deleteId = async (req: Request, res: Response) =>
+{
+    const id = req.params.id
+    const user = await User.findOne({ _id: id })
+
+    if(user){
+        await user.deleteOne()
+    }
+    
+    res.redirect('/')
 
 
 
