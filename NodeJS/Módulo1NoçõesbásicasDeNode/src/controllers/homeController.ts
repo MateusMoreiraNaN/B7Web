@@ -11,10 +11,11 @@ export const home = (req: Request, res: Response)=>{
 
     let age: Number = 90
     let showOld: boolean = false
+    /*
     if(age > 50){
         showOld = true
     }
-
+    */
     let list = Product.getAll()
     let expensiveList = Product.getPrice(12)
 
