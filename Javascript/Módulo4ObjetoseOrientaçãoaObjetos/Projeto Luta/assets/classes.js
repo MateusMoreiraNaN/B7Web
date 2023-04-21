@@ -74,13 +74,23 @@ class Stage {
 
     start(){
         this.update()
+
+        this.fighter1E1.querySelector('.attackbuttom').addEventListener('click', () =>{
+
+        })
     }
 
     update(){
-        this.fighter1E1.querySelector('.name').innerHTML = this.fighter1.name
+        this.fighter1E1.querySelector('.name').innerHTML = `${this.fighter1.name} - ${this.fighter1.life} HP`
+        let f1Pct = (this.fighter1.life / this.fighter1.maxLife) * 100
+        this.fighter1E1.querySelector('.bar').style.width = `${f1Pct}%`
 
-        this.fighter2E1.querySelector('.name').innerHTML = this.fighter2.name
+        this.fighter2E1.querySelector('.name').innerHTML = `${this.fighter1.name} - ${this.fighter1.life} HP`
+        let f2Pct = (this.fighter2.life / this.fighter2.maxLife) * 100
+        this.fighter2E1.querySelector('.bar').style.width = `${f2Pct}%`
     }
+
+    doAttack()
 }
 
 console.log('rodando');
