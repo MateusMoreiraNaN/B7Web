@@ -1,4 +1,5 @@
 import React from "react"
+import { Apex } from './components/Apex'
 
 const Header = () =>{
     return (
@@ -28,7 +29,7 @@ const App = () =>{
         <div>
             <Header/>
             Opa {name}, Tudo bem?
-
+            <Apex/>
             {n1 * n2}
         
             (<a href="https://www.youtube.com/">Clique aqui</a>)
