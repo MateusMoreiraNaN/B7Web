@@ -1,5 +1,13 @@
 import React from "react"
 
+const Header = () =>{
+    return (
+        <header>
+            <h1>Titulo da página</h1>
+        </header>
+    )
+}
+
 const App = () =>{
 
     let name: string = 'Mateus'
