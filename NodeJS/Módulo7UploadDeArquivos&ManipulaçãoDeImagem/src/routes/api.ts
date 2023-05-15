@@ -8,7 +8,12 @@ const upload = multer({
 
 const router = Router()
 
-router.post('/upload', upload.single('mr.robot'), pingController.upload)
+router.post('/upload', upload.single('avatar'), pingController.upload)
+router.post('/uploadFiles', upload.fields(
+    [ 
+    {name: 'zip', maxCount: 3},
+    {name: 'avatar'}
+]), pingController.uploadFiles)
 
 
 
