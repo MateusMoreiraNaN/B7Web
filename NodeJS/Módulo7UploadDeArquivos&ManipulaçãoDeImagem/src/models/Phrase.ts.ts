@@ -3,8 +3,7 @@ import { sequelize } from "../instances/sql";
 
 export interface ImageInstance extends Model{
     id: number
-    author: string
-    txt: string
+    
 }
 
 export const Image = sequelize.define<ImageInstance>('Image',{
@@ -13,13 +12,8 @@ export const Image = sequelize.define<ImageInstance>('Image',{
         autoIncrement: true,
         type: DataTypes.INTEGER
     },
-    author:{
-        type: DataTypes.STRING
-    },
-    txt:{
-        type: DataTypes.STRING
-    }
+    
 },{
-    tableName: 'Api',
+    tableName: 'campo',
     timestamps: false
 })
