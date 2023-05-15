@@ -23,3 +23,9 @@ export const uploadFiles = async(req: Request, res: Response)=>{
 
     res.json({})
 }
+
+export const uploadImage = async(req: Request, res: Response)=>{
+    console.log(req.file)
+
+    res.json({})
+}

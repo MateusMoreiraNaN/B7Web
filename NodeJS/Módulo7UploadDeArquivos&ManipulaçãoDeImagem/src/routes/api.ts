@@ -18,6 +18,28 @@ const upload = multer({
     storage: storageConfig
 })
 
+
+const uploadimage = multer({
+    dest: './tmp',
+    fileFilter: (req, file, cb) =>{
+        const allowed: string[] = ['image/jpg', 'image/jpeg', 'image/png']
+
+        console.log('Informações', file);
+
+        if(allowed.includes( file.mimetype )){
+            cb(null, true)
+        }else{
+            cb(null, false)
+        }
+
+        
+        
+    },
+    limits:{
+        fieldSize: 2000000
+    }
+})
+
 const router = Router()
 
 router.post('/upload', upload.single('avatar'), pingController.upload)
@@ -26,6 +48,8 @@ router.post('/uploadFiles', upload.fields(
     {name: 'zip', maxCount: 3},
     {name: 'avatar'}
 ]), pingController.uploadFiles)
+router.post('/uploadImage', uploadimage.single('image'), pingController.uploadImage)
+
 
 
 
