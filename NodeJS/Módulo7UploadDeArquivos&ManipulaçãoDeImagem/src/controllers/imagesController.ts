@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { join } from "path";
+import { unlink } from 'fs/promises'
 import { Sequelize } from 'sequelize';
 import { ImageDb, ImageInstance } from '../models/Phrase.ts'
 import sharp from "sharp";
@@ -13,6 +14,8 @@ export const upload = async(req: Request, res: Response)=>{
         })
         .toFormat('jpeg')
         .toFile(`./public/midia/${req.file.filename}`)
+
+        await unlink(req.file.path)
 
         res.json({image: `${req.file.filename}`})
     }else{
