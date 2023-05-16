@@ -8,7 +8,7 @@ import sharp from "sharp";
 export const upload = async(req: Request, res: Response)=>{
     if(req.file){
         await sharp(req.file.path)
-        .resize({
+        .resize(1000, 1000,{
             fit: sharp.fit.fill,
             position: 'top'
         })
