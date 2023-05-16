@@ -5,22 +5,26 @@ import { ImageDb, ImageInstance } from '../models/Phrase.ts'
 import sharp from "sharp";
 
 export const upload = async(req: Request, res: Response)=>{
-    console.log(req.file)
+    if(req.file){
+        await sharp(req.file.path)
+        .resize({
+            fit: sharp.fit.fill,
+            position: 'top'
+        })
+        .toFormat('jpeg')
+        .toFile(`./public/midia/${req.file.filename}`)
 
-    res.json({})
+        res.json({image: `${req.file.filename}`})
+    }else{
+        res.status(400)
+        res.json({error: 'Erro'})
+    }
 }
 
 export const uploadFiles = async(req: Request, res: Response)=>{
     //const files = req.files as { [fielname: string]: Express.Multer.File[]}
 
-    if(req.file){
-        await sharp(req.file.path).resize(500).toFormat('jpeg').toFile(`./public/media/${req.file.filename}.jpg`)
-
-        res.json({})
-    }else{
-        res.status(400)
-        res.json({error: 'Erro'})
-    }
+    
 
     
     const files = req.files as {
@@ -33,7 +37,7 @@ export const uploadFiles = async(req: Request, res: Response)=>{
 
     //console.log(req.files.user);
     //console.log(req.files);
-    res.json({})
+    
 }
 
 export const uploadImage = async(req: Request, res: Response)=>{
