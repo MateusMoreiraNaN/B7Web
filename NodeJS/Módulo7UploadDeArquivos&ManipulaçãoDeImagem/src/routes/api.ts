@@ -1,6 +1,7 @@
 import { Router } from "express";
 import * as pingController from '../controllers/imagesController'
 import multer from "multer";
+import sharp from "sharp";
 
 
 const storageConfig = multer.diskStorage({
