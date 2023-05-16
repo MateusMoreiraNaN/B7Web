@@ -2,25 +2,27 @@ import { Router } from "express";
 import * as pingController from '../controllers/imagesController'
 import multer from "multer";
 
+
 const storageConfig = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './tpm')
+        cb(null, './tmp')
     },
     filename: (req,file, cb) => {
-        let randomName = Math.floor(Math.random() * 999999999999999999)
+        let randomName = Math.floor(Math.random() * 99999999999999)
         cb(null, `${randomName+Date.now()}.jpg`)
     }
 })
 
+
 const upload = multer({
-    //dest: './tpm'
+    //dest: './tmp',
     //storage: multer.memoryStorage,
     storage: storageConfig
 })
 
 
 const uploadimage = multer({
-    dest: './tmp',
+    dest: './tpm',
     fileFilter: (req, file, cb) =>{
         const allowed: string[] = ['image/jpg', 'image/jpeg', 'image/png']
 
@@ -37,18 +39,16 @@ const uploadimage = multer({
     },
     limits:{
         fieldSize: 2000000
-    }
+    },
+    storage: storageConfig
 })
+
 
 const router = Router()
 
 router.post('/upload', upload.single('avatar'), pingController.upload)
-router.post('/uploadFiles', upload.fields(
-    [ 
-    {name: 'zip', maxCount: 3},
-    {name: 'avatar'}
-]), pingController.uploadFiles)
-router.post('/uploadImage', uploadimage.single('image'), pingController.uploadImage)
+router.post('/uploadFiles', upload.fields([{name: 'zip', maxCount: 3},{name: 'user'}]), pingController.uploadFiles)
+router.post('/uploadImage',uploadimage.single('image'), pingController.uploadImage)
 
 
 

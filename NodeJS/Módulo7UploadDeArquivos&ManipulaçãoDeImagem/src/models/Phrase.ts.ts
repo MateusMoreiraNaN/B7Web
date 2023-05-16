@@ -6,7 +6,7 @@ export interface ImageInstance extends Model{
     
 }
 
-export const Image = sequelize.define<ImageInstance>('Image',{
+export const ImageDb = sequelize.define<ImageInstance>('ImageDb',{
     id:{
         primaryKey: true,
         autoIncrement: true,
