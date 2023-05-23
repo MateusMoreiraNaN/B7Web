@@ -1,6 +1,7 @@
 import React from "react"
 import { Apex } from './components/Apex'
 import { Header } from "./components/Header"
+import { Photo } from "./components/Photo"
 
 /*
 const Header = () =>{
@@ -36,6 +37,12 @@ const App = () =>{
             {n1 * n2}
         
             (<a href="https://www.youtube.com/">Clique aqui</a>)
+
+            
+            <Photo legend="Google">
+                <img src="https://www.google.com.br/logos/google.jpg" alt="" />
+            </Photo>
+            
 
             <F/>
         </div>
