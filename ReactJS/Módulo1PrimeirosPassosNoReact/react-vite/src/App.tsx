@@ -1,6 +1,8 @@
 import React from "react"
 import { Apex } from './components/Apex'
+import { Header } from "./components/Header"
 
+/*
 const Header = () =>{
     return (
         <header>
@@ -9,6 +11,7 @@ const Header = () =>{
         </header>
     )
 }
+*/
 
 const F = () =>{
     return(
@@ -27,7 +30,7 @@ const App = () =>{
     return(
         
         <div>
-            <Header/>
+            <Header  title="Este é um exemplo"/>
             Opa {name}, Tudo bem?
             <Apex/>
             {n1 * n2}
