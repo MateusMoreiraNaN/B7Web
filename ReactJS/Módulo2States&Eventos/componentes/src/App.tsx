@@ -20,8 +20,32 @@ const App = ()=>{
     {name: 'Paulo', age: '90'},
   ]
 
+  const [show, setShow] = useState(false)
+
+  const move = ()=>{
+    /*
+    if(show){
+      setShow(false)
+    }else{
+      setShow(true)
+    }
+    */
+   setShow( !show )
+  }
+
     return(
       <div>
+
+        <button onClick={move}>{
+          show ? 'Ocultar' : 'Mostrar'
+        }</button>
+
+        {show == true &&
+          <div>
+              Bla bla bla....
+          </div>
+        }
+
         <Botao text={textoDoBotao} clickFn={botaoEvent}/>
 
         <h2>Lista de presença</h2>

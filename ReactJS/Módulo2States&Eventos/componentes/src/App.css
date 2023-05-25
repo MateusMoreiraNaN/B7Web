@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+body div{
+  padding: 30px;
+  font-size: 25px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
