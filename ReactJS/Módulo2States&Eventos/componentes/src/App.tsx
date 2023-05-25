@@ -51,8 +51,8 @@ const App = ()=>{
         <h2>Lista de presença</h2>
         <ul>
          {list.map((i, index)=>(
-          //<li key={index}>{i?.name} - {i?.age} anos</li>
-          <Pessoa key={index} data={i} />
+          <li key={index}>{i?.name} - {i?.age} anos</li>
+          //<Pessoa key={index} data={i} />
          ))}
         </ul>
       </div>
