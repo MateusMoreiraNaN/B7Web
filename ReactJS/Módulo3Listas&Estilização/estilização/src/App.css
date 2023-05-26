@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+body button{
+  font-size: 45px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
