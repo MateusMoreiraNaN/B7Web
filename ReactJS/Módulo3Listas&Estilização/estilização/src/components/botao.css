@@ -1,7 +1,10 @@
-.botao{
-    background-color: '#17D8A6';
+.botao1{
+    background-color: #17D8A6;
     font-weight: bold;
-    padding: 35px 30px;
+    font-size: 55px;
+    padding-right: 150px;
+    padding-left: 150px;
+
 }
 
 .legend{

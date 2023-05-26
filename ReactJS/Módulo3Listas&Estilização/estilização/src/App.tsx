@@ -24,7 +24,7 @@ const App = () =>{
 
   return(
     <div>
-      <button onClick={handleClick}style={{backgroundColor: clicked ? '#273746' : '#E67E22 ', padding: padding }}>Clique aqui</button>
+      <button className='botao3' onClick={handleClick}style={{backgroundColor: clicked ? '#273746' : '#E67E22 ', padding: padding }}>Clique aqui</button>
 
       <Botao />
 
