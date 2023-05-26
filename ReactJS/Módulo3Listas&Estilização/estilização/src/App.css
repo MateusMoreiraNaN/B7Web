@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -7,6 +8,7 @@
 
 body button{
   font-size: 45px;
+  margin: 15px;
 }
 
 .logo {

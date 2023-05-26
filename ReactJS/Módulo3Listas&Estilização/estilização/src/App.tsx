@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { Botao } from './components/Botao'
 
 const App = () =>{
   const [clicked, setClick] = useState(false)
@@ -24,6 +25,10 @@ const App = () =>{
   return(
     <div>
       <button onClick={handleClick}style={{backgroundColor: clicked ? '#273746' : '#E67E22 ', padding: padding }}>Clique aqui</button>
+
+      <Botao />
+
+      
     </div>
   )
 }
