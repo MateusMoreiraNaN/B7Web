@@ -21,11 +21,11 @@ body{
 .container .leftSide{
     flex: 1;
     margin-right: 40px;
-    background-color: #000;
+    
 }
 
 .container .rightSide{
     flex: 1;
     margin-left: 40px;
-    background-color: #000;
+    
 }
