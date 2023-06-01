@@ -1,7 +1,7 @@
 import { Router } from "express";
 
 import * as ApiController from '../controllers/apiController'
-import { Auth } from "../middlewares/auth";
+import { apiAuth } from "../middlewares/auth";
 
 const router = Router()
 
@@ -10,6 +10,6 @@ const router = Router()
 router.post('/register', ApiController.register)
 router.post('/login', ApiController.login)
 
-router.get('/list', Auth.private, ApiController.list)
+router.get('/list', apiAuth.private, ApiController.list)
 
 export default router
