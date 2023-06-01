@@ -9,13 +9,13 @@ const server = express();
 
 
 
-server.use(bodyParser.urlencoded({ extended: true }))
+//server.use(bodyParser.urlencoded({ extended: true }))
 
-/*
+
 server.use(bodyParser.urlencoded({extended: false}))
 server.use(bodyParser.json())
 server.use(express.json())
-*/
+
 
 
 server.use(mainRoutes);

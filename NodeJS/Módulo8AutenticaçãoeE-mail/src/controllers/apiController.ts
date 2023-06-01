@@ -9,7 +9,7 @@ export const register = async(req:Request, res: Response)=>{
 
         let hasUser = await Auth.findOne({where:{email}})
 
-        if(hasUser){
+        if(!hasUser){
             let newUser = await Auth.create({email, password})
     
     
