@@ -2,6 +2,7 @@ import express, { Request, Response} from 'express';
 import dotenv from 'dotenv';
 import mainRoutes from './routes/apiRouter';
 import bodyParser from 'body-parser'
+import passport from 'passport';
 
 dotenv.config();
 
@@ -16,7 +17,7 @@ server.use(bodyParser.urlencoded({extended: false}))
 server.use(bodyParser.json())
 server.use(express.json())
 
-
+server.use(passport.initialize())
 
 server.use(mainRoutes);
 
