@@ -1,5 +1,31 @@
 import passport from "passport"
+import dotenv from 'dotenv'
+import { Strategy as JWTStrategy, ExtractJwt } from 'passport-jwt'
+import { Auth } from "../model/authModel"
 
-//passport.use()
+dotenv.config()
+
+const notAuthrorizeJson = { status: 401, message: 'Não autorizado' }
+
+const options = {
+    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+    secretOrKey: process.env.JWT_SECRET_KEY as string
+}
+
+passport.use(new JWTStrategy(options, async (payload, done)=>{
+
+    const user = await Auth.findByPk(payload.id)   
+    
+    // se achar o id
+    if(user){
+        return done(null, user)
+    }else{
+        return done(notAuthrorizeJson, false)
+    }
+
+
+    //return(null, user)
+    //return done(notAuthrorizeJson, user)
+}))
 
 export default passport
