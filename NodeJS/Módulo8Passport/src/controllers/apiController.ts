@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { Auth } from "../model/authModel";
 import JWT from 'jsonwebtoken'
 import dotenv from 'dotenv'
+import { generateToken } from "../config/passport";
 
 dotenv.config()
 
@@ -15,11 +16,7 @@ export const register = async(req:Request, res: Response)=>{
         if(!hasUser){
             let newUser = await Auth.create({email, password})
 
-            const token = JWT.sign(
-                { id: newUser.id, email: newUser.email },
-                process.env.JWT_SECRET_KEY as string,
-                { expiresIn: '2h' }
-            )
+            const token = generateToken({id: newUser.id})
     
     
             res.json({id: newUser.id, token})
@@ -49,11 +46,7 @@ export const login = async(req: Request, res: Response)=>{
 
         if(user){
             
-            const token = JWT.sign(
-                { id: user.id, email: user.email },
-                process.env.JWT_SECRET_KEY as string,
-                { expiresIn: '2h' }
-            )
+            const token = generateToken({id: user.id})
             
 
             res.json({ status: true, token})

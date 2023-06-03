@@ -1,4 +1,4 @@
-import express, { Request, Response} from 'express';
+import express, { ErrorRequestHandler, Request, Response} from 'express';
 import dotenv from 'dotenv';
 import mainRoutes from './routes/apiRouter';
 import bodyParser from 'body-parser'
@@ -25,6 +25,23 @@ server.use((req: Request, res: Response)=>{
     res.status(404).send('Página não encontrada!');
 });
 
+const errorHandler: ErrorRequestHandler = (err, req, res, next)=>{
+    if(err.status){
+        res.status(err.status)
+    }else{
+        res.status(400)
+    }
+    if(err.message){
+        res.json({error: err.message})
+    }else{
+        res.json({error: "Ocorreu um erro."})
+    }
+
+    
+    
+}
+
+server.use(errorHandler)
 
 
 server.listen(process.env.PORT);

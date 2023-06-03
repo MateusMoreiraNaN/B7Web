@@ -11,9 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.2.5",
+    "@types/passport-local": "^1.0.35",
     "@types/sequelize": "^4.28.15"
   },
   "dependencies": {
+    "@nestjs/passport": "^9.0.3",
     "@types/body-parser": "^1.19.2",
     "@types/express": "^4.17.17",
     "@types/jsonwebtoken": "^9.0.2",
@@ -25,6 +27,7 @@
     "jsonwebtoken": "^9.0.0",
     "mysql2": "^3.3.3",
     "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
     "sequelize": "^6.31.1"
   }
 }
