@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-dev": "jest",
+    
     "test": "NODE_ENV=test& jest --runInBand",
     "start-dev": "nodemon -e ts,json, src/server.ts"
   },
