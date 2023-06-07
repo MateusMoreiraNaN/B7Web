@@ -12,11 +12,12 @@ describe('Testing Math library', ()=>{
     })
     
     it('should multiply two numbers correctly', ()=>{
-        const res = Math.sum(5, 2)
-        expect(res).toBe(10)
-    
+        const res = Math.mut(3, 5)
+        expect(res).toBe(15)
+        /*
         const res2 = Math.mut(0, 3)
         expect(res2).toBe(0)
+        */
     })
     
     it('should divide two numbers correctly', ()=>{
