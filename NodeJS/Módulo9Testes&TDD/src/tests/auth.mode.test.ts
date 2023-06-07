@@ -1,1 +1,1 @@
-import
+import { Auth } from "../model/authModel";
