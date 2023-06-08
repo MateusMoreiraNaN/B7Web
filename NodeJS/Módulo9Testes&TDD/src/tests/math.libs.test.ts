@@ -1,6 +1,24 @@
 import { Math } from "../libs/math";
 
 describe('Testing Math library', ()=>{
+
+    beforeEach(()=>{
+
+    })
+
+    afterEach(()=>{
+
+    })
+
+    beforeAll(()=>{
+
+    })
+
+    afterAll(()=>{
+        
+    })
+
+
     it('should sum two numbers correctly', ()=>{
         const res = Math.sum(5, 10)
         expect(res).toBe(15)
