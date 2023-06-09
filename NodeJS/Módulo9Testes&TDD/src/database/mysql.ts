@@ -1,16 +1,17 @@
 import { Sequelize } from "sequelize";
 import dotenv from 'dotenv'
+import db from "./mysqlTeste";
 
 dotenv.config()
 
 export const sequelize = new Sequelize(
     
-    process.env.MYSQL_DB as string,
-    process.env.MYSQL_USER as string,
-    process.env.MYSQL_PASSWORD as string,
+    db.db,
+    db.user,
+    db.password,
     {
         dialect: 'mysql',
-        port: parseInt(process.env.MYSQL_PORT as string),
+        port: parseInt(db.port),
         timezone: "-03:00"
     }
 
