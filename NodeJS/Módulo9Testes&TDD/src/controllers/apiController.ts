@@ -15,17 +15,18 @@ export const register = async(req:Request, res: Response)=>{
         const newUser = await UserService.createUser(email, password)
 
         if(newUser instanceof Error){
-            res.json({error: newUser.message})
+            return res.json({error: newUser.message})
         }else{
             const token = generateToken({id: newUser.id})
     
     
-            res.json({id: newUser.id, token})
+            return res.json({id: newUser.id, token})
         }         
        
-    }else{
-        res.json({error: 'E-mail e/ou senha não enviados'})
     }
+        
+        res.json({error: 'E-mail e/ou senha não enviados'})
+    
 
     
 }
@@ -41,17 +42,17 @@ export const login = async(req: Request, res: Response)=>{
             const token = generateToken({id: user.id})
             
 
-            res.json({ status: true, token})
-            return
+            return res.json({ status: true, token})
+            
         }
 
        
         
         
         
-    }else{
-        res.json({ status: false })
     }
+    res.json({ status: false })
+    
 }
 
 export const list = async(req: Request, res: Response)=>{

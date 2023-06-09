@@ -6,9 +6,11 @@ describe('Testing user service', ()=>{
     let email = 'teste@jest.com'
     let password = '1234'
 
+    
     beforeAll(async ()=>{
         await Auth.sync({force: true})
     })
+    
 
     it('should create a new user', async()=>{
         const newUser = await UserService.createUser(email, password) as authInstance
