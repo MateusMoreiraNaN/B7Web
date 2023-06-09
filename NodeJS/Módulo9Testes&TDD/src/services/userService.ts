@@ -2,16 +2,16 @@ import passport from "passport";
 import { Auth } from "../model/authModel";
 import bcrypt from 'bcrypt'
 
-export const createUser = async(email: string, passport: string)=>{
+export const createUser = async(email: string, password: string)=>{
     const hasUser = await Auth.findOne({ where:{email} })
 
 
     if(!hasUser){
-        const hash = bcrypt.hashSync(passport, 10)
+        const hash = bcrypt.hashSync(password, 10)
 
         const newUser = await Auth.create({
             email,
-            passport: hash
+            password: hash
         })
         return newUser
     }else{
