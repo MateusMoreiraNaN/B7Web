@@ -63,7 +63,7 @@ export const list = async(req: Request, res: Response)=>{
         list.push(users[i].email)
     }
 
-    res.json({list})
+    return res.json({list})
 }
 
 
