@@ -19,10 +19,7 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
-import Env from '@ioc:Adonis/Core/Env'
+//import HomeController from 'App/Controllers/Http/HomeController'
 
-Route.get('/', async ({ view }) => {
-  return view.render('welcome')
 
-  Env.get('EMAIL_USER')
-})
+Route.get('/', 'HomeController.index')
