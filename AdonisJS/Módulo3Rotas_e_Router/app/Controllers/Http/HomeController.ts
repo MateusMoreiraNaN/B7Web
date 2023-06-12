@@ -6,4 +6,8 @@ export default class HomeController {
         //return 'Hello World'
         
     }
+
+    async sobre(){
+        return'Sobre a google'
+    }
 }
