@@ -1,5 +1,7 @@
 // import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
+import { Response } from "@adonisjs/core/build/standalone"
+
 export default class PainelsController {
 
     protected users = [{
@@ -19,8 +21,9 @@ export default class PainelsController {
         }
     ]
     
-    async index({request}){
-        request.qs()//Query String
+    async index({response}){
+        //request.qs()//Query String
+        /*
         return {
             res:'painel do admin',
             headers: request.headers(),
@@ -35,6 +38,11 @@ export default class PainelsController {
             only: request.only(['idade']),
             except: request.except(['sexo'])
         }
+        */
+       let json = { hello: 'world' }
+       response.redirect().toPath('/api/painel/usuarios/1')
+       response.status(201).send(json)
+       
     }
 
     /*
