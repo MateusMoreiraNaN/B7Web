@@ -8,7 +8,9 @@ export default class HomeController {
             usuario:{
                 usuario: 'Alessandro Kobs',
                 idade: 123,
-                apelido: 'Kobs'
+                apelido: 'Kobs',
+                tecnologias: ['html', 'css', 'js'],
+                //tecnologiasTexto: ['html', 'css', 'js'].join(',')
             }
         }
         return view.render('painel/home', dados)
