@@ -67,6 +67,7 @@
       
           main ul {
             list-style: none;
+            font-size: 28px
           }
       
           main li {
@@ -98,6 +99,15 @@
                 <p class="subtitle">
                     B7Web
                 </p>
+
+                <h1>Usúarios: </h1>
+                <ul>
+                  @each(usuario in usuarios)
+                    <li>{{usuario.nome}} - {{usuario.tecnologias}}</li>
+                  @end
+                  
+
+                </ul>
         
                 
             </div>
