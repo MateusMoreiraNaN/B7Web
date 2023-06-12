@@ -4,14 +4,17 @@ export default class PainelsController {
 
     protected users = [{
             id: 1,
+            slug: 'ale',
             name: 'Alessandro Kobs'
         },
         {
             id: 2,
+            slug: 'fufu',
             name: 'Fulano da Silva'
         },
         {
             id: 3,
+            slug: 'mat',
             name: 'Mateus'
         }
     ]
@@ -39,11 +42,23 @@ export default class PainelsController {
         return{res: 'senhas dos usuarios fica aqui.'}
     }
 
-    async usuario({params}){
+    async usuarioById({params}){
         let myReqUserId = params['id']
 
         
         let myUser = this.users.find(user => user.id == myReqUserId)
+        if(myUser){
+            return myUser
+        }else{
+            return {error: 'Nenhum usuário encontrado'}
+        }
+    }
+
+    async usuarioBySlug({params}){
+        let myReqUserSlug = params['slug']
+
+        
+        let myUser = this.users.find(user => user.slug == myReqUserSlug)
         if(myUser){
             return myUser
         }else{
