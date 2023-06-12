@@ -25,6 +25,7 @@ export default class PainelsController {
         
     }
 
+    /*
     async usuarios(){
         //return{res: 'usuarios no banco de dados'}
 
@@ -33,6 +34,7 @@ export default class PainelsController {
         }
   
     }
+    */
 
     async admin(){
         return{res: 'admin do sistema'}
@@ -43,7 +45,27 @@ export default class PainelsController {
     }
 
     async usuarioById({params}){
-        let myReqUserId = params['id']
+        /*
+        if(params['id']){
+            let myReqUserId = params['id']
+
+        
+            let myUser = this.users.find(user => user.id == myReqUserId)
+            if(myUser){
+            return myUser
+            }else{
+            return {error: 'Nenhum usuário encontrado'}
+            }
+        }else{
+            return{users: this.users}
+        }
+        */
+       // clean code
+       //se não existir 
+       if(!params['id']){
+            return{users: this.users}
+       }
+       let myReqUserId = params['id']
 
         
         let myUser = this.users.find(user => user.id == myReqUserId)
@@ -52,6 +74,7 @@ export default class PainelsController {
         }else{
             return {error: 'Nenhum usuário encontrado'}
         }
+        
     }
 
     async usuarioBySlug({params}){
@@ -64,5 +87,9 @@ export default class PainelsController {
         }else{
             return {error: 'Nenhum usuário encontrado'}
         }
+    }
+
+    async docs({params}){
+        return params['*'][3]
     }
 }
