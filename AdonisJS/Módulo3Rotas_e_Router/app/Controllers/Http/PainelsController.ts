@@ -19,10 +19,12 @@ export default class PainelsController {
         }
     ]
     
-    async index(){
-        
-        return {res:'painel do admin'}
-        
+    async index({request}){
+        request.qs()//Query String
+        return {
+            res:'painel do admin',
+            qs: request.qs()
+        }
     }
 
     /*
