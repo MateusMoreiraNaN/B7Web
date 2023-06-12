@@ -2,7 +2,7 @@
 
 export default class HomeController {
     async index({view}){
-        return view.render('welcome')
+        return view.render('painel/home')
         //return 'Hello World'
         
     }

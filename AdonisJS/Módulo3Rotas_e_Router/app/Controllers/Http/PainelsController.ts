@@ -1,6 +1,6 @@
 // import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
-import { Response } from "@adonisjs/core/build/standalone"
+//import { Response } from "@adonisjs/core/build/standalone"
 
 export default class PainelsController {
 
