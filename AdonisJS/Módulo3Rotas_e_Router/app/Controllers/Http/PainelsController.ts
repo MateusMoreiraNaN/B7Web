@@ -23,7 +23,17 @@ export default class PainelsController {
         request.qs()//Query String
         return {
             res:'painel do admin',
-            qs: request.qs()
+            headers: request.headers(),
+            language: request.language(),
+            method: request.method(),
+            ip: request.ip(),
+            ips: request.ips(),
+            qs: request.qs(),
+            url: request.url(),
+            completeUrl: request.completeUrl(),
+            all: request.all(),
+            only: request.only(['idade']),
+            except: request.except(['sexo'])
         }
     }
 
