@@ -40,8 +40,9 @@ export default class PainelsController {
         }
         */
        let json = { hello: 'world' }
-       response.redirect().toPath('/api/painel/usuarios/1')
        response.status(201).send(json)
+       response.redirect().toPath('/api/painel/usuarios/1')
+    
        
     }
 
