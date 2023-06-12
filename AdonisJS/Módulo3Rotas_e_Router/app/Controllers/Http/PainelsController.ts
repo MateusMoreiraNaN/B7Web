@@ -12,4 +12,12 @@ export default class PainelsController {
         return{res: 'usuarios no banco de dados'}
   
     }
+
+    async admin(){
+        return{res: 'admin do sistema'}
+    }
+
+    async passwords(){
+        return{res: 'senhas dos usuarios fica aqui.'}
+    }
 }

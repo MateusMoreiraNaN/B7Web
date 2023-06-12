@@ -1,4 +1,13 @@
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/painel', 'PainelsController.index')
-Route.get('/painel/usuarios', 'PainelsController.usuarios')
+Route.group
+(()=>{
+    Route.get('/admin/', 'PainelsController.admin')
+    
+    Route.group(()=>{
+        Route.get('/', 'PainelsController.index')
+        Route.get('/usuarios', 'PainelsController.usuarios')
+        Route.get('/password', 'PainelsController.passwords')
+    }).prefix('/painel/')
+
+}).prefix('/api')
