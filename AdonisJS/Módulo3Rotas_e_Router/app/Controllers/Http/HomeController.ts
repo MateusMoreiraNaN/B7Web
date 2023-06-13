@@ -39,7 +39,7 @@ export default class HomeController {
                     nome: 'Julia',
                     tecnologias:['C#', 'js', 'c++'],
                     admin: true
-                }
+                },
                 {
                     nome: 'Lala',
                     tecnologias:['C#', 'js', 'c++'],
@@ -52,7 +52,14 @@ export default class HomeController {
         
     }
 
-    async sobre(){
-        return'Sobre a google'
+    async sobre({view}){
+        let dados = {
+            
+            script: "<script> alert('teste') </script>"
+            
+
+            
+        }
+        return view.render('painel/users', dados)
     }
 }
