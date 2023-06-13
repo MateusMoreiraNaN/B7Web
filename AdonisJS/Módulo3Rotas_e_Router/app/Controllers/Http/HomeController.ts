@@ -18,15 +18,18 @@ export default class HomeController {
             usuarios:[
                 {
                     nome: 'Pedro',
-                    tecnologias:['java', 'php', 'python']
+                    tecnologias:['java', 'php', 'python'],
+                    admin: false
                 },
                 {
                     nome: 'Mateus',
-                    tecnologias:['node', 'css', 'JS']
+                    tecnologias:['node', 'css', 'JS'],
+                    admin: true
                 },
                 {
                     nome: 'Tiago',
-                    tecnologias:['jogo digital', 'ios', 'node']
+                    tecnologias:['jogo digital', 'ios', 'node'],
+                    admin: false
                 },
                 {
                     nome: 'Fulano',
@@ -34,7 +37,13 @@ export default class HomeController {
                 },
                 {
                     nome: 'Julia',
-                    tecnologias:['C#', 'js', 'c++']
+                    tecnologias:['C#', 'js', 'c++'],
+                    admin: true
+                }
+                {
+                    nome: 'Lala',
+                    tecnologias:['C#', 'js', 'c++'],
+                    admin: true
                 }
             ]
         }

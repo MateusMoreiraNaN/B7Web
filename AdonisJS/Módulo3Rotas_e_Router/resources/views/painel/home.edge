@@ -108,6 +108,29 @@
                   
 
                 </ul>
+
+                <h2>Administradores</h2>
+
+                <ul>
+                  @each(usuario in usuarios)
+                    @if(usuario.admin == true)
+                      <li>{{usuario.nome}}</li>
+                    @end
+                  @end
+                 
+                </ul>
+
+                <h2>Usúarios</h2>
+
+                <ul>
+                  @each(usuario in usuarios)
+                    @if(!usuario.admin)
+                      <li>{{usuario.nome}}</li>
+                   
+                    @end
+                  @end
+                 
+                </ul>
         
                 
             </div>
