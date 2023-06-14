@@ -5,18 +5,18 @@ export default class extends BaseSchema {
 
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
-      table.increments('id')
+      table.increments('id').notNullable()
       //não se usa rollback em produção
       //ou nem usa eelee mesmo
       //porquee pode apagar todos os dados da tabela
-      table.string('title')
-      table.text('content', 'longtext')
+      table.string('title').notNullable()
+      table.text('content', 'longtext').notNullable()
 
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
        */
-      table.timestamp('created_at', { useTz: true })
-      table.timestamp('updated_at', { useTz: true })
+      table.timestamp('created_at', { useTz: true }).notNullable().defaultTo(this.now())
+      table.timestamp('updated_at', { useTz: true }).notNullable().defaultTo(this.now())
     })
   }
 
