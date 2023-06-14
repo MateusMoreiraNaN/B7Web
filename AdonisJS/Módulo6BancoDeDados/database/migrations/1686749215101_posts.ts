@@ -6,6 +6,9 @@ export default class extends BaseSchema {
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
+      //não se usa rollback em produção
+      //ou nem usa eelee mesmo
+      //porquee pode apagar todos os dados da tabela
       table.string('title')
       table.text('content', 'longtext')
 

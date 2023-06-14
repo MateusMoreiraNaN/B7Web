@@ -5,9 +5,12 @@ export default class extends BaseSchema {
 
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
-      table.increments('id')
-      table.string('username')
-      table.string('email')
+      table.increments('id').notNullable()
+      //.primary()
+      table.string('username').notNullable()
+      // .unique() para não ter emails duplicados
+      table.string('email').unique().notNullable()
+      table.boolean('is_admin').defaultTo(0)
 
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
