@@ -1,8 +1,9 @@
-import express, { Request, Response } from "express";
-import path from "path";
-import mustache from 'mustache-express'
+import express from 'express'
 import dotenv from 'dotenv'
-import routes from './routes/routes'
+import mustache from 'mustache-express'
+import path from 'path'
+import mainRoutes from './routes/routes'
+//npm run start
 
 dotenv.config()
 
@@ -12,13 +13,15 @@ server.set('view engine', 'mustache')
 server.set('views', path.join(__dirname, 'views'))
 server.engine('mustache', mustache())
 
-server.use(express.static(path.join(__dirname, '../public')));
+server.use(express.static(path.join(__dirname, '../public')))
 
-server.use(express.urlencoded({extended: true}));
-server.use(mainRoutes);
+server.use(express.urlencoded({extended: true}))
 
-server.use((req: Request, res: Response)=>{
-    res.status(404).send('Página não encontrada!');
-});
+//Rotas
 
-server.listen(process.env.PORT);
+server.use(mainRoutes)
+server.use((req, res)=>{
+    res.render('pages/404')
+})
+
+server.listen(process.env.PORT)
