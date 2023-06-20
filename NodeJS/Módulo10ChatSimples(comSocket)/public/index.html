@@ -18,7 +18,8 @@
             }
 
             #loginPage{
-                display: none;
+                display: flex;
+                background-color: #1861A2;
             }
 
             #loginNameInput{
@@ -33,7 +34,7 @@
             }
 
             #chatPage{
-                display: flex;
+                display: none;
             }
 
             .chatArea{
@@ -120,22 +121,15 @@
 
         <div class="page" id="chatPage">
             <div class="chatArea">
-                <ul class="chatList">
-                    <li class="m-status">Fulano entrou na sala</li>
-                    <li class="m-status">Fulano saiu da sala</li>
-                    <li class="m-txt"><span class="me">Mateus</span> Opa, tudo bem?</li>
-                    <li class="m-txt"><span>Paulo</span> Opa, tudo bem?</li>
-                </ul>
-                <ul class="userList">
-                    <li>Mateus</li>
-                    <li>Mateus</li>
-                    <li>Mateus</li>
-                    
-                </ul>
+                <ul class="chatList"></ul>
+                <ul class="userList"></ul>
             </div>
             <div class="chatInput">
                 <input type="text" id="chatTextInput" placeholder="Digite uma mensagem"/>
             </div>
         </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/socket.js"></script>
     </body>
 </html>

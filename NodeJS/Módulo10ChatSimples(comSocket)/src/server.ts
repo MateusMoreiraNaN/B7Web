@@ -1,27 +1,47 @@
-import express from 'express'
+import express, {Request, Response} from 'express'
 import dotenv from 'dotenv'
-import mustache from 'mustache-express'
+//import mustache from 'mustache-express'
 import path from 'path'
 import mainRoutes from './routes/routes'
-//npm run start
+import  { Server }  from 'socket.io' 
+import http from 'http'
 
 dotenv.config()
 
-const server = express()
 
-server.set('view engine', 'mustache')
-server.set('views', path.join(__dirname, 'views'))
-server.engine('mustache', mustache())
 
-server.use(express.static(path.join(__dirname, '../public')))
+const app = express()
 
-server.use(express.urlencoded({extended: true}))
+//app.set('view engine', 'mustache')
+//app.set('views', path.join(__dirname, 'views'))
+//app.engine('mustache', mustache())
+
+
+//app.set("view engine", "");
+//app.set('view engine', 'html');
+app.use(express.static(path.join(__dirname, '../public')))
+
+//app.use(express.urlencoded({extended: true}))
 
 //Rotas
 
-server.use(mainRoutes)
-server.use((req, res)=>{
-    res.render('pages/404')
+app.use(mainRoutes)
+
+const serverHttp = http.createServer(app)
+
+export const io = new Server(serverHttp)
+
+
+
+
+
+
+serverHttp.listen(process.env.PORT)
+
+io.on('connection', (socket)=>{
+    console.log("Conexão detectada...");
+    
 })
 
-server.listen(process.env.PORT)
+
+

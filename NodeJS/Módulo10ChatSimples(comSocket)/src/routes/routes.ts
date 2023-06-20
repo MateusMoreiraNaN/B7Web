@@ -6,4 +6,4 @@ const router = Router()
 
 export default router
 
-router.get("/", ControllerChat.Chat)
+//router.get("/", ControllerChat.Chat)
