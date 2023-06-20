@@ -18,7 +18,7 @@
             }
 
             #loginPage{
-                display: flex;
+                display: none;
             }
 
             #loginNameInput{
@@ -33,9 +33,48 @@
             }
 
             #chatPage{
-                display: none;
+                display: flex;
             }
 
+            .chatArea{
+                flex: 1;
+                width: 100%;
+                display: flex;
+
+                background-color: #CCC;
+            }
+
+            .chatInput{
+                width: 100%;
+                display: flex;
+            }
+
+            #chatTextInput{
+                flex: 1;
+                height: 40px;
+                padding: 0 10px;
+                font-size: 15px;
+                background-color: #FFF;
+                outline: 0;
+                border: 0;
+            }
+
+            .chatList{
+                flex: 1;
+                background-color: #3F7FE9;
+                
+            }
+
+            .userList{
+                width: 200px;
+                background-color: #FFF;
+            }
+
+            ul, li{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
 
         </style>
     </head>
@@ -46,7 +85,13 @@
         </div>
 
         <div class="page" id="chatPage">
-
+            <div class="chatArea">
+                <ul class="chatList"></ul>
+                <ul class="userList"></ul>
+            </div>
+            <div class="chatInput">
+                <input type="text" id="chatTextInput" placeholder="Digite uma mensagem"/>
+            </div>
         </div>
     </body>
 </html>
